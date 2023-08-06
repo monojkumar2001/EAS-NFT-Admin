@@ -1,0 +1,2346 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful bootstrap admin dashboard, which allows you to build products like admin panels, content management systems and CRMs etc."
+    />
+
+    <!-- theme meta -->
+    <meta name="theme-name" content="sleek" />
+
+    <title>MUSICPROMOTION Admin Dashboard Template</title>
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- PLUGINS CSS STYLE -->
+    <link href="assets/plugins/simplebar/simplebar.css" rel="stylesheet" />
+    <link href="assets/plugins/nprogress/nprogress.css" rel="stylesheet" />
+
+    <!-- No Extra plugin used -->
+    <link
+      href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      href="assets/plugins/daterangepicker/daterangepicker.css"
+      rel="stylesheet"
+    />
+
+    <link href="assets/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <!-- SLEEK CSS -->
+    <link id="sleek-css" rel="stylesheet" href="assets/css/sleek.css" />
+    <link id="sleek-css" rel="stylesheet" href="assets/css/sidebar.css" />
+    <link id="sleek-css" rel="stylesheet" href="assets/css/style.css" />
+    <link id="sleek-css" rel="stylesheet" href="assets/css/styles.css" />
+    <link id="sleek-css" rel="stylesheet" href="assets/css/order.css" />
+
+    <!-- FAVICON -->
+    <link href="assets/img/favicon.png" rel="shortcut icon" />
+    <script src="assets/plugins/nprogress/nprogress.js"></script>
+  </head>
+  <div class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+    <script>
+      NProgress.configure({ showSpinner: false });
+      NProgress.start();
+    </script>
+    <!-- <div id="toaster"></div> -->
+
+    <!-- ====================================
+    ——— WRAPPER
+    ===================================== -->
+    <div class="wrapper">
+      <!-- ====================================
+          ——— LEFT SIDEBAR WITH OUT FOOTER
+        ===================================== -->
+      <aside class="left-sidebar bg-sidebar">
+        <div id="sidebar" class="sidebar">
+          <!-- Aplication Brand -->
+          <div class="app-brand">
+            <a href="/index.html" title="Sleek Dashboard">
+              <img src="./assets/img/user/admin.jpg" alt="" />
+              <div class="brand-name text-truncate">
+                <p>Azizul Akash</p>
+                <span>CEO</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- begin sidebar scrollbar -->
+          <div class="" data-simplebar style="height: 100%">
+            <!-- sidebar menu -->
+            <ul class="nav sidebar-inner" id="sidebar-menu">
+              <li class="has-sub">
+                <a
+                  class="sidenav-item-link"
+                  href="javascript:void(0)"
+                  data-toggle="collapse"
+                  data-target="#dashboard"
+                  aria-expanded="false"
+                  aria-controls="dashboard"
+                >
+                  <i class="mdi mdi-view-dashboard-outline"></i>
+                  <span class="nav-text">Dashboard </span>
+                  <b class="caret"></b>
+                </a>
+                <ul class="collapse" id="dashboard" data-parent="#sidebar-menu">
+                  <div class="sub-menu">
+                    <li class="active">
+                      <a class="sidenav-item-link" href="/index.html">
+                        <span class="nav-text">User Dashboard</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="sidenav-item-link" href="/analytics.html">
+                        <span class="nav-text">Analytics</span>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a
+                  class="sidenav-item-link"
+                  href="javascript:void(0)"
+                  data-toggle="collapse"
+                  data-target="#message"
+                  aria-expanded="false"
+                  aria-controls="message"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455Zm-.692-2H20V5H4v13.385L5.763 17ZM11 10h2v2h-2v-2Zm-4 0h2v2H7v-2Zm8 0h2v2h-2v-2Z"
+                    />
+                  </svg>
+                  <span class="nav-text">Messages</span>
+                  <b class="caret"></b>
+                </a>
+                <ul class="collapse" id="message" data-parent="#sidebar-menu">
+                  <div class="sub-menu">
+                    <li class="active">
+                      <a class="sidenav-item-link" href="/message.html">
+                        <span class="nav-text">User Message</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="sidenav-item-link" href="/message-preview.html">
+                        <span class="nav-text">Message Details</span>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a
+                  class="sidenav-item-link"
+                  href="javascript:void(0)"
+                  data-toggle="collapse"
+                  data-target="#orders"
+                  aria-expanded="false"
+                  aria-controls="orders"
+                >
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.91312 20.1729C7.32272 20.1729 6.7565 19.9095 6.33902 19.4406C5.92155 18.9718 5.68701 18.3359 5.68701 17.6729C5.68701 17.0098 5.92155 16.3739 6.33902 15.9051C6.7565 15.4362 7.32272 15.1729 7.91312 15.1729C8.50352 15.1729 9.06974 15.4362 9.48722 15.9051C9.9047 16.3739 10.1392 17.0098 10.1392 17.6729C10.1392 18.3359 9.9047 18.9718 9.48722 19.4406C9.06974 19.9095 8.50352 20.1729 7.91312 20.1729ZM15.7045 20.1729C15.1141 20.1729 14.5479 19.9095 14.1304 19.4406C13.7129 18.9718 13.4784 18.3359 13.4784 17.6729C13.4784 17.0098 13.7129 16.3739 14.1304 15.9051C14.5479 15.4362 15.1141 15.1729 15.7045 15.1729C16.2949 15.1729 16.8611 15.4362 17.2786 15.9051C17.6961 16.3739 17.9306 17.0098 17.9306 17.6729C17.9306 18.3359 17.6961 18.9718 17.2786 19.4406C16.8611 19.9095 16.2949 20.1729 15.7045 20.1729ZM1.19249 2.5766C0.91463 2.56654 0.651146 2.4355 0.457761 2.2112C0.264376 1.98691 0.15625 1.68694 0.15625 1.37473C0.15625 1.06252 0.264376 0.762545 0.457761 0.538248C0.651146 0.313952 0.91463 0.182916 1.19249 0.172852L2.47362 0.172852C3.47759 0.172852 4.34578 0.955352 4.56394 2.05535L5.9586 9.10785C6.17675 10.2079 7.04494 10.9904 8.04891 10.9904H16.4102L18.0152 3.77785H7.61371C7.33846 3.76375 7.07865 3.63102 6.88831 3.40729C6.69797 3.18356 6.59176 2.88603 6.59176 2.5766C6.59176 2.26717 6.69797 1.96965 6.88831 1.74591C7.07865 1.52218 7.33846 1.38946 7.61371 1.37535H18.0152C18.3406 1.37524 18.6617 1.45845 18.9542 1.61864C19.2466 1.77884 19.5027 2.0118 19.7029 2.29983C19.9032 2.58786 20.0423 2.92337 20.1098 3.28085C20.1772 3.63833 20.1712 4.00837 20.0922 4.36285L18.4871 11.5729C18.3714 12.0931 18.1042 12.555 17.7278 12.885C17.3515 13.215 16.8877 13.3942 16.4102 13.3941H8.04891C7.07476 13.3942 6.1297 13.0213 5.3698 12.3367C4.60991 11.6522 4.08063 10.6971 3.86939 9.6291L2.47362 2.5766H1.19249Z"
+                      fill="#444444"
+                    />
+                  </svg>
+                  <span class="nav-text">Orders</span>
+                  <b class="caret"></b>
+                </a>
+                <ul class="collapse" id="orders" data-parent="#sidebar-menu">
+                  <div class="sub-menu">
+                    <li class="active">
+                      <a class="sidenav-item-link" href="/orders.html">
+                        <span class="nav-text">User Orders</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="sidenav-item-link" href="/order-details.html">
+                        <span class="nav-text">Orders Details</span>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a
+                  class="sidenav-item-link"
+                  href="javascript:void(0)"
+                  data-toggle="collapse"
+                  data-target="#users"
+                  aria-expanded="false"
+                  aria-controls="users"
+                >
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.18262 4.84342H18.1826V1.96842H2.18262V4.84342ZM18.1826 6.76009V18.2601C18.1826 18.5143 18.0773 18.758 17.8897 18.9377C17.7022 19.1175 17.4478 19.2184 17.1826 19.2184H3.18262C2.9174 19.2184 2.66305 19.1175 2.47551 18.9377C2.28797 18.758 2.18262 18.5143 2.18262 18.2601V6.76009H1.18262C0.917401 6.76009 0.663047 6.65912 0.47551 6.4794C0.287974 6.29968 0.182617 6.05592 0.182617 5.80176V1.01009C0.182617 0.755925 0.287974 0.51217 0.47551 0.332447C0.663047 0.152725 0.917401 0.0517578 1.18262 0.0517578L19.1826 0.0517578C19.4478 0.0517578 19.7022 0.152725 19.8897 0.332447C20.0773 0.51217 20.1826 0.755925 20.1826 1.01009V5.80176C20.1826 6.05592 20.0773 6.29968 19.8897 6.4794C19.7022 6.65912 19.4478 6.76009 19.1826 6.76009H18.1826ZM4.18262 17.3018H16.1826V6.76009H4.18262V17.3018ZM8.18262 13.4684H12.1826C12.4478 13.4684 12.7022 13.5694 12.8897 13.7491C13.0773 13.9288 13.1826 14.1726 13.1826 14.4268C13.1826 14.6809 13.0773 14.9247 12.8897 15.1044C12.7022 15.2841 12.4478 15.3851 12.1826 15.3851H8.18262C7.9174 15.3851 7.66305 15.2841 7.47551 15.1044C7.28797 14.9247 7.18262 14.6809 7.18262 14.4268C7.18262 14.1726 7.28797 13.9288 7.47551 13.7491C7.66305 13.5694 7.9174 13.4684 8.18262 13.4684Z"
+                      fill="#444444"
+                    />
+                  </svg>
+                  <span class="nav-text">Users </span>
+                  <b class="caret"></b>
+                </a>
+                <ul class="collapse" id="users" data-parent="#sidebar-menu">
+                  <div class="sub-menu">
+                    <li class="active">
+                      <a class="sidenav-item-link" href="/customer-list.html">
+                        <span class="nav-text">Customer List</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="sidenav-item-link" href="/blog-list.html">
+                        <span class="nav-text">Blog List</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="sidenav-item-link" href="/Subscriber-list.html">
+                        <span class="nav-text">Subscriber List</span>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a class="sidenav-item-link" href="#">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.1826 5.98626V3.12912H2.18262V5.98626H18.1826ZM18.1826 10.272H2.18262V17.4148H18.1826V10.272ZM2.18262 0.271973H18.1826C18.7131 0.271973 19.2218 0.572992 19.5968 1.10881C19.9719 1.64463 20.1826 2.37135 20.1826 3.12912V17.4148C20.1826 18.1726 19.9719 18.8993 19.5968 19.4351C19.2218 19.971 18.7131 20.272 18.1826 20.272H2.18262C1.65218 20.272 1.14348 19.971 0.768404 19.4351C0.393331 18.8993 0.182617 18.1726 0.182617 17.4148V3.12912C0.182617 2.37135 0.393331 1.64463 0.768404 1.10881C1.14348 0.572992 1.65218 0.271973 2.18262 0.271973ZM4.18262 13.1291H5.18262C5.44783 13.1291 5.70219 13.2796 5.88972 13.5475C6.07726 13.8154 6.18262 14.1788 6.18262 14.5577C6.18262 14.9366 6.07726 15.2999 5.88972 15.5678C5.70219 15.8357 5.44783 15.9863 5.18262 15.9863H4.18262C3.9174 15.9863 3.66305 15.8357 3.47551 15.5678C3.28797 15.2999 3.18262 14.9366 3.18262 14.5577C3.18262 14.1788 3.28797 13.8154 3.47551 13.5475C3.66305 13.2796 3.9174 13.1291 4.18262 13.1291ZM9.18262 13.1291H14.1826C14.4478 13.1291 14.7022 13.2796 14.8897 13.5475C15.0773 13.8154 15.1826 14.1788 15.1826 14.5577C15.1826 14.9366 15.0773 15.2999 14.8897 15.5678C14.7022 15.8357 14.4478 15.9863 14.1826 15.9863H9.18262C8.9174 15.9863 8.66305 15.8357 8.47551 15.5678C8.28797 15.2999 8.18262 14.9366 8.18262 14.5577C8.18262 14.1788 8.28797 13.8154 8.47551 13.5475C8.66305 13.2796 8.9174 13.1291 9.18262 13.1291Z"
+                      fill="#444444"
+                    />
+                  </svg>
+
+                  <span class="nav-text">Transactions</span>
+                </a>
+              </li>
+              <li class="has-sub">
+                <a class="sidenav-item-link" href="#">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29461 10.2691C7.39706 10.2254 7.50724 10.2027 7.61863 10.2023C7.73002 10.2019 7.84036 10.2238 7.94313 10.2668C8.0459 10.3097 8.13901 10.3729 8.21696 10.4524C8.29491 10.532 8.35611 10.6264 8.39695 10.7301C8.43779 10.8337 8.45744 10.9445 8.45474 11.0558C8.45203 11.1672 8.42703 11.2769 8.38121 11.3784C8.33539 11.4799 8.26967 11.5712 8.18796 11.6469C8.10624 11.7226 8.01018 11.7812 7.90544 11.8191C7.34839 12.0386 6.8703 12.4207 6.53336 12.9156C6.19643 13.4105 6.01625 13.9954 6.01628 14.5941V16.0441C6.01628 16.2651 6.10407 16.4771 6.26035 16.6334C6.41663 16.7896 6.6286 16.8774 6.84961 16.8774H13.5163C13.7373 16.8774 13.9493 16.7896 14.1055 16.6334C14.2618 16.4771 14.3496 16.2651 14.3496 16.0441V14.6716C14.3497 14.0537 14.162 13.4503 13.8114 12.9415C13.4607 12.4326 12.9637 12.0424 12.3863 11.8224C12.2809 11.7859 12.1839 11.7285 12.1011 11.6538C12.0183 11.579 11.9514 11.4884 11.9042 11.3873C11.8571 11.2862 11.8307 11.1767 11.8267 11.0652C11.8227 10.9537 11.8411 10.8426 11.8808 10.7384C11.9205 10.6341 11.9808 10.5389 12.058 10.4584C12.1352 10.3779 12.2278 10.3137 12.3302 10.2696C12.4327 10.2256 12.543 10.2025 12.6545 10.2018C12.7661 10.2012 12.8766 10.2229 12.9796 10.2658C13.8726 10.6059 14.6412 11.2094 15.1835 11.9962C15.7258 12.783 16.0162 13.716 16.0163 14.6716V16.0441C16.0163 16.7071 15.7529 17.343 15.284 17.8119C14.8152 18.2807 14.1793 18.5441 13.5163 18.5441H6.84961C6.18657 18.5441 5.55068 18.2807 5.08184 17.8119C4.613 17.343 4.34961 16.7071 4.34961 16.0441V14.5941C4.34972 13.6609 4.63067 12.7493 5.15591 11.978C5.68115 11.2066 6.42636 10.6112 7.29461 10.2691ZM10.1829 1.87744C11.067 1.87744 11.9148 2.22863 12.54 2.85375C13.1651 3.47887 13.5163 4.32672 13.5163 5.21077V6.87744C13.5163 7.7615 13.1651 8.60934 12.54 9.23446C11.9148 9.85959 11.067 10.2108 10.1829 10.2108C9.29889 10.2108 8.45104 9.85959 7.82592 9.23446C7.2008 8.60934 6.84961 7.7615 6.84961 6.87744V5.21077C6.84961 4.32672 7.2008 3.47887 7.82592 2.85375C8.45104 2.22863 9.29889 1.87744 10.1829 1.87744ZM10.1829 3.54411C9.74092 3.54411 9.31699 3.7197 9.00443 4.03226C8.69187 4.34482 8.51628 4.76875 8.51628 5.21077V6.87744C8.51628 7.31947 8.69187 7.74339 9.00443 8.05595C9.31699 8.36851 9.74092 8.54411 10.1829 8.54411C10.625 8.54411 11.0489 8.36851 11.3615 8.05595C11.674 7.74339 11.8496 7.31947 11.8496 6.87744V5.21077C11.8496 4.76875 11.674 4.34482 11.3615 4.03226C11.0489 3.7197 10.625 3.54411 10.1829 3.54411Z"
+                      fill="black"
+                    />
+                  </svg>
+
+                  <span class="nav-text">Email Template</span>
+                </a>
+              </li>
+              <li class="has-sub">
+                <a
+                  class="sidenav-item-link"
+                  href="javascript:void(0)"
+                  data-toggle="collapse"
+                  data-target="#Invoice"
+                  aria-expanded="false"
+                  aria-controls="Invoice"
+                >
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.5962 11.3524H14.2382C14.3695 11.3524 14.4996 11.3783 14.6209 11.4285C14.7422 11.4788 14.8525 11.5524 14.9453 11.6453C15.0382 11.7382 15.1118 11.8484 15.1621 11.9697C15.2123 12.0911 15.2382 12.2211 15.2382 12.3524C15.2382 12.4837 15.2123 12.6138 15.1621 12.7351C15.1118 12.8564 15.0382 12.9667 14.9453 13.0595C14.8525 13.1524 14.7422 13.226 14.6209 13.2763C14.4996 13.3265 14.3695 13.3524 14.2382 13.3524H8.5962L9.7182 14.4744C9.90571 14.6621 10.011 14.9165 10.0109 15.1818C10.0108 15.447 9.90534 15.7014 9.7177 15.8889C9.53006 16.0764 9.27562 16.1817 9.01035 16.1816C8.74508 16.1815 8.49071 16.0761 8.3032 15.8884L5.4752 13.0604C5.38187 12.9677 5.30779 12.8575 5.25724 12.7361C5.20669 12.6147 5.18066 12.4844 5.18066 12.3529C5.18066 12.2214 5.20669 12.0912 5.25724 11.9697C5.30779 11.8483 5.38187 11.7381 5.4752 11.6454L8.3022 8.81741C8.48971 8.62977 8.74408 8.52431 9.00935 8.52421C9.27462 8.52412 9.52906 8.62941 9.7167 8.81691C9.90434 9.00442 10.0098 9.25879 10.0099 9.52406C10.01 9.78933 9.90471 10.0438 9.7172 10.2314L8.5962 11.3524ZM18.1822 3.52441C18.4474 3.52441 18.7018 3.62977 18.8893 3.81731C19.0768 4.00484 19.1822 4.2592 19.1822 4.52441V20.5244C19.1822 20.7896 19.0768 21.044 18.8893 21.2315C18.7018 21.4191 18.4474 21.5244 18.1822 21.5244C17.917 21.5244 17.6626 21.4191 17.4751 21.2315C17.2876 21.044 17.1822 20.7896 17.1822 20.5244V4.52441C17.1822 4.2592 17.2876 4.00484 17.4751 3.81731C17.6626 3.62977 17.917 3.52441 18.1822 3.52441Z"
+                      fill="#444444"
+                    />
+                  </svg>
+                  <span class="nav-text">Invoice</span>
+                  <b class="caret"></b>
+                </a>
+                <ul class="collapse" id="Invoice" data-parent="#sidebar-menu">
+                  <div class="sub-menu">
+                    <li class="active">
+                      <a class="sidenav-item-link" href="/invoice.html">
+                        <span class="nav-text">Invoice</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="sidenav-item-link" href="/invoice-list.html">
+                        <span class="nav-text">Invoice List</span>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a
+                  class="sidenav-item-link"
+                  href="javascript:void(0)"
+                  data-toggle="collapse"
+                  data-target="#ticket"
+                  aria-expanded="false"
+                  aria-controls="ticket"
+                >
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.5962 11.3524H14.2382C14.3695 11.3524 14.4996 11.3783 14.6209 11.4285C14.7422 11.4788 14.8525 11.5524 14.9453 11.6453C15.0382 11.7382 15.1118 11.8484 15.1621 11.9697C15.2123 12.0911 15.2382 12.2211 15.2382 12.3524C15.2382 12.4837 15.2123 12.6138 15.1621 12.7351C15.1118 12.8564 15.0382 12.9667 14.9453 13.0595C14.8525 13.1524 14.7422 13.226 14.6209 13.2763C14.4996 13.3265 14.3695 13.3524 14.2382 13.3524H8.5962L9.7182 14.4744C9.90571 14.6621 10.011 14.9165 10.0109 15.1818C10.0108 15.447 9.90534 15.7014 9.7177 15.8889C9.53006 16.0764 9.27562 16.1817 9.01035 16.1816C8.74508 16.1815 8.49071 16.0761 8.3032 15.8884L5.4752 13.0604C5.38187 12.9677 5.30779 12.8575 5.25724 12.7361C5.20669 12.6147 5.18066 12.4844 5.18066 12.3529C5.18066 12.2214 5.20669 12.0912 5.25724 11.9697C5.30779 11.8483 5.38187 11.7381 5.4752 11.6454L8.3022 8.81741C8.48971 8.62977 8.74408 8.52431 9.00935 8.52421C9.27462 8.52412 9.52906 8.62941 9.7167 8.81691C9.90434 9.00442 10.0098 9.25879 10.0099 9.52406C10.01 9.78933 9.90471 10.0438 9.7172 10.2314L8.5962 11.3524ZM18.1822 3.52441C18.4474 3.52441 18.7018 3.62977 18.8893 3.81731C19.0768 4.00484 19.1822 4.2592 19.1822 4.52441V20.5244C19.1822 20.7896 19.0768 21.044 18.8893 21.2315C18.7018 21.4191 18.4474 21.5244 18.1822 21.5244C17.917 21.5244 17.6626 21.4191 17.4751 21.2315C17.2876 21.044 17.1822 20.7896 17.1822 20.5244V4.52441C17.1822 4.2592 17.2876 4.00484 17.4751 3.81731C17.6626 3.62977 17.917 3.52441 18.1822 3.52441Z"
+                      fill="#444444"
+                    />
+                  </svg>
+                  <span class="nav-text">Ticket</span>
+                  <b class="caret"></b>
+                </a>
+                <ul class="collapse" id="ticket" data-parent="#sidebar-menu">
+                  <div class="sub-menu">
+                    <li class="active">
+                      <a class="sidenav-item-link" href="/ticket-list.html">
+                        <span class="nav-text">Ticket List</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="sidenav-item-link" href="/ticket-message.html">
+                        <span class="nav-text">Ticket Message</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        class="sidenav-item-link"
+                        href="/ticket-catagory-list.html"
+                      >
+                        <span class="nav-text">Ticket Catagory List</span>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a
+                  class="sidenav-item-link"
+                  href="javascript:void(0)"
+                  data-toggle="collapse"
+                  data-target="#coupons"
+                  aria-expanded="false"
+                  aria-controls="coupons"
+                >
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.5962 11.3524H14.2382C14.3695 11.3524 14.4996 11.3783 14.6209 11.4285C14.7422 11.4788 14.8525 11.5524 14.9453 11.6453C15.0382 11.7382 15.1118 11.8484 15.1621 11.9697C15.2123 12.0911 15.2382 12.2211 15.2382 12.3524C15.2382 12.4837 15.2123 12.6138 15.1621 12.7351C15.1118 12.8564 15.0382 12.9667 14.9453 13.0595C14.8525 13.1524 14.7422 13.226 14.6209 13.2763C14.4996 13.3265 14.3695 13.3524 14.2382 13.3524H8.5962L9.7182 14.4744C9.90571 14.6621 10.011 14.9165 10.0109 15.1818C10.0108 15.447 9.90534 15.7014 9.7177 15.8889C9.53006 16.0764 9.27562 16.1817 9.01035 16.1816C8.74508 16.1815 8.49071 16.0761 8.3032 15.8884L5.4752 13.0604C5.38187 12.9677 5.30779 12.8575 5.25724 12.7361C5.20669 12.6147 5.18066 12.4844 5.18066 12.3529C5.18066 12.2214 5.20669 12.0912 5.25724 11.9697C5.30779 11.8483 5.38187 11.7381 5.4752 11.6454L8.3022 8.81741C8.48971 8.62977 8.74408 8.52431 9.00935 8.52421C9.27462 8.52412 9.52906 8.62941 9.7167 8.81691C9.90434 9.00442 10.0098 9.25879 10.0099 9.52406C10.01 9.78933 9.90471 10.0438 9.7172 10.2314L8.5962 11.3524ZM18.1822 3.52441C18.4474 3.52441 18.7018 3.62977 18.8893 3.81731C19.0768 4.00484 19.1822 4.2592 19.1822 4.52441V20.5244C19.1822 20.7896 19.0768 21.044 18.8893 21.2315C18.7018 21.4191 18.4474 21.5244 18.1822 21.5244C17.917 21.5244 17.6626 21.4191 17.4751 21.2315C17.2876 21.044 17.1822 20.7896 17.1822 20.5244V4.52441C17.1822 4.2592 17.2876 4.00484 17.4751 3.81731C17.6626 3.62977 17.917 3.52441 18.1822 3.52441Z"
+                      fill="#444444"
+                    />
+                  </svg>
+                  <span class="nav-text">Coupons</span>
+                  <b class="caret"></b>
+                </a>
+                <ul class="collapse" id="coupons" data-parent="#sidebar-menu">
+                  <div class="sub-menu">
+                    <li class="active">
+                      <a class="sidenav-item-link" href="/coupon-list.html">
+                        <span class="nav-text">Coupon List</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        class="sidenav-item-link"
+                        href="/coupon-usage-list.html"
+                      >
+                        <span class="nav-text">Coupon Usage List</span>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a class="sidenav-item-link" href="/support-dashboard.html">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.1816 22.9243C6.65864 22.9243 2.18164 18.4473 2.18164 12.9243C2.18164 7.40132 6.65864 2.92432 12.1816 2.92432C17.7046 2.92432 22.1816 7.40132 22.1816 12.9243C22.1816 18.4473 17.7046 22.9243 12.1816 22.9243ZM12.1816 20.9243C14.3034 20.9243 16.3382 20.0815 17.8385 18.5812C19.3388 17.0809 20.1816 15.046 20.1816 12.9243C20.1816 10.8026 19.3388 8.76775 17.8385 7.26746C16.3382 5.76717 14.3034 4.92432 12.1816 4.92432C10.0599 4.92432 8.02508 5.76717 6.52479 7.26746C5.0245 8.76775 4.18164 10.8026 4.18164 12.9243C4.18164 15.046 5.0245 17.0809 6.52479 18.5812C8.02508 20.0815 10.0599 20.9243 12.1816 20.9243ZM12.1816 10.9243C12.4469 10.9243 12.7012 11.0297 12.8887 11.2172C13.0763 11.4047 13.1816 11.6591 13.1816 11.9243V16.9243C13.1816 17.1895 13.0763 17.4439 12.8887 17.6314C12.7012 17.819 12.4469 17.9243 12.1816 17.9243C11.9164 17.9243 11.6621 17.819 11.4745 17.6314C11.287 17.4439 11.1816 17.1895 11.1816 16.9243V11.9243C11.1816 11.6591 11.287 11.4047 11.4745 11.2172C11.6621 11.0297 11.9164 10.9243 12.1816 10.9243ZM12.1816 9.92432C11.9164 9.92432 11.6621 9.81896 11.4745 9.63142C11.287 9.44389 11.1816 9.18953 11.1816 8.92432C11.1816 8.6591 11.287 8.40475 11.4745 8.21721C11.6621 8.02967 11.9164 7.92432 12.1816 7.92432C12.4469 7.92432 12.7012 8.02967 12.8887 8.21721C13.0763 8.40475 13.1816 8.6591 13.1816 8.92432C13.1816 9.18953 13.0763 9.44389 12.8887 9.63142C12.7012 9.81896 12.4469 9.92432 12.1816 9.92432Z"
+                      fill="#343434"
+                    />
+                  </svg>
+                  <span class="nav-text">Support</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <!-- ====================================
+        ——— PAGE WRAPPER
+        ===================================== -->
+      <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header" id="header">
+          <nav class="navbar navbar-static-top navbar-expand-lg">
+            <!-- Sidebar toggle button -->
+            <button id="sidebar-toggler" class="sidebar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+            <!-- search form -->
+            <div class="search-form d-none d-lg-inline-block">
+              <div class="input-group">
+                <button
+                  type="button"
+                  name="search"
+                  id="search-btn"
+                  class="btn btn-flat"
+                >
+                  <i class="mdi mdi-magnify"></i>
+                </button>
+                <input
+                  type="text"
+                  name="query"
+                  id="search-input"
+                  class="form-control"
+                  placeholder="Search something.."
+                  autofocus
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="dropdown notifications-menu custom-dropdown">
+                  <button
+                    class="dropdown-toggle notify-toggler custom-dropdown-toggler"
+                  >
+                    <i class="mdi mdi-bell-outline"></i>
+                  </button>
+
+                  <div
+                    class="card card-default dropdown-notify dropdown-menu-right mb-0"
+                  >
+                    <div class="card-header card-header-border-bottom px-3">
+                      <h2>Notifications</h2>
+                    </div>
+
+                    <div class="card-body px-0 py-3">
+                      <ul
+                        class="nav nav-tabs nav-style-border p-0 justify-content-between"
+                        id="myTab"
+                        role="tablist"
+                      >
+                        <li class="nav-item mx-3 my-0 py-0">
+                          <a
+                            class="nav-link active pb-3"
+                            id="home2-tab"
+                            data-toggle="tab"
+                            href="#home2"
+                            role="tab"
+                            aria-controls="home2"
+                            aria-selected="true"
+                            >All (11)</a
+                          >
+                        </li>
+
+                        <li class="nav-item mx-3 my-0 py-0">
+                          <a
+                            class="nav-link pb-3"
+                            id="profile2-tab"
+                            data-toggle="tab"
+                            href="#profile2"
+                            role="tab"
+                            aria-controls="profile2"
+                            aria-selected="false"
+                            >Msgs (6)</a
+                          >
+                        </li>
+
+                        <li class="nav-item mx-3 my-0 py-0">
+                          <a
+                            class="nav-link pb-3"
+                            id="contact2-tab"
+                            data-toggle="tab"
+                            href="#contact2"
+                            role="tab"
+                            aria-controls="contact2"
+                            aria-selected="false"
+                            >Others (5)</a
+                          >
+                        </li>
+                      </ul>
+
+                      <div class="tab-content" id="myTabContent3">
+                        <div
+                          class="tab-pane fade show active"
+                          id="home2"
+                          role="tabpanel"
+                          aria-labelledby="home2-tab"
+                        >
+                          <ul
+                            class="list-unstyled"
+                            data-simplebar
+                            style="height: 360px"
+                          >
+                            <li>
+                              <a href="javscript:void(0)">
+                                <a
+                                  href="/message-preview.html"
+                                  class="media media-message media-notification"
+                                >
+                                  <div class="position-relative mr-3">
+                                    <img
+                                      class="rounded-circle"
+                                      src="assets/img/user/u2.jpg"
+                                      alt="Image"
+                                    />
+                                    <span class="status away"></span>
+                                  </div>
+                                  <div
+                                    class="media-body d-flex justify-content-between"
+                                  >
+                                    <div class="message-contents">
+                                      <h4 class="title">Aarn</h4>
+                                      <p class="last-msg">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Nam itaque doloremque
+                                        odio, eligendi delectus vitae.
+                                      </p>
+
+                                      <span
+                                        class="font-size-12 font-weight-medium text-secondary"
+                                      >
+                                        <i class="mdi mdi-clock-outline"></i> 30
+                                        min ago...
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="javscript:void(0)">
+                                <a
+                                  href="/message-preview.html"
+                                  class="media media-message media-notification media-active"
+                                >
+                                  <div class="position-relative mr-3">
+                                    <img
+                                      class="rounded-circle"
+                                      src="assets/img/user/u2.jpg"
+                                      alt="Image"
+                                    />
+                                    <span class="status away"></span>
+                                  </div>
+                                  <div
+                                    class="media-body d-flex justify-content-between"
+                                  >
+                                    <div class="message-contents">
+                                      <h4 class="title">Aarn</h4>
+                                      <p class="last-msg">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Nam itaque doloremque
+                                        odio, eligendi delectus vitae.
+                                      </p>
+
+                                      <span
+                                        class="font-size-12 font-weight-medium text-secondary"
+                                      >
+                                        <i class="mdi mdi-clock-outline"></i> 30
+                                        min ago...
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="tab-pane fade"
+                          id="profile2"
+                          role="tabpanel"
+                          aria-labelledby="profile2-tab"
+                        >
+                          <ul
+                            class="list-unstyled"
+                            data-simplebar
+                            style="height: 360px"
+                          >
+                            <li>
+                              <a href="javscript:void(0)">
+                                <a
+                                  href="/message-preview.html"
+                                  class="media media-message media-notification media-active"
+                                >
+                                  <div class="position-relative mr-3">
+                                    <img
+                                      class="rounded-circle"
+                                      src="assets/img/user/u2.jpg"
+                                      alt="Image"
+                                    />
+                                    <span class="status away"></span>
+                                  </div>
+                                  <div
+                                    class="media-body d-flex justify-content-between"
+                                  >
+                                    <div class="message-contents">
+                                      <h4 class="title">Aarn</h4>
+                                      <p class="last-msg">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Nam itaque doloremque
+                                        odio, eligendi delectus vitae.
+                                      </p>
+
+                                      <span
+                                        class="font-size-12 font-weight-medium text-secondary"
+                                      >
+                                        <i class="mdi mdi-clock-outline"></i> 30
+                                        min ago...
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="javscript:void(0)">
+                                <a
+                                  href="/message-preview.html"
+                                  class="media media-message media-notification media-active"
+                                >
+                                  <div class="position-relative mr-3">
+                                    <img
+                                      class="rounded-circle"
+                                      src="assets/img/user/u2.jpg"
+                                      alt="Image"
+                                    />
+                                    <span class="status away"></span>
+                                  </div>
+                                  <div
+                                    class="media-body d-flex justify-content-between"
+                                  >
+                                    <div class="message-contents">
+                                      <h4 class="title">Aarn</h4>
+                                      <p class="last-msg">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Nam itaque doloremque
+                                        odio, eligendi delectus vitae.
+                                      </p>
+
+                                      <span
+                                        class="font-size-12 font-weight-medium text-secondary"
+                                      >
+                                        <i class="mdi mdi-clock-outline"></i> 30
+                                        min ago...
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="javscript:void(0)">
+                                <a
+                                  href="/message-preview.html"
+                                  class="media media-message media-notification media-active"
+                                >
+                                  <div class="position-relative mr-3">
+                                    <img
+                                      class="rounded-circle"
+                                      src="assets/img/user/u2.jpg"
+                                      alt="Image"
+                                    />
+                                    <span class="status away"></span>
+                                  </div>
+                                  <div
+                                    class="media-body d-flex justify-content-between"
+                                  >
+                                    <div class="message-contents">
+                                      <h4 class="title">Aarn</h4>
+                                      <p class="last-msg">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Nam itaque doloremque
+                                        odio, eligendi delectus vitae.
+                                      </p>
+
+                                      <span
+                                        class="font-size-12 font-weight-medium text-secondary"
+                                      >
+                                        <i class="mdi mdi-clock-outline"></i> 30
+                                        min ago...
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="tab-pane fade"
+                          id="contact2"
+                          role="tabpanel"
+                          aria-labelledby="contact2-tab"
+                        >
+                          <ul
+                            class="list-unstyled"
+                            data-simplebar
+                            style="height: 360px"
+                          >
+                            <li>
+                              <a href="javscript:void(0)">
+                                <a
+                                  href="/message-preview.html"
+                                  class="media media-message media-notification media-active"
+                                >
+                                  <div class="position-relative mr-3">
+                                    <img
+                                      class="rounded-circle"
+                                      src="assets/img/user/u2.jpg"
+                                      alt="Image"
+                                    />
+                                    <span class="status away"></span>
+                                  </div>
+                                  <div
+                                    class="media-body d-flex justify-content-between"
+                                  >
+                                    <div class="message-contents">
+                                      <h4 class="title">Aarn</h4>
+                                      <p class="last-msg">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Nam itaque doloremque
+                                        odio, eligendi delectus vitae.
+                                      </p>
+
+                                      <span
+                                        class="font-size-12 font-weight-medium text-secondary"
+                                      >
+                                        <i class="mdi mdi-clock-outline"></i> 30
+                                        min ago...
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="dropdown-menu dropdown-menu-right d-none">
+                    <li class="dropdown-header">You have 5 notifications</li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-account-plus"></i> New user registered
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 10 AM</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-account-remove"></i> User deleted
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 07 AM</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-chart-areaspline"></i> Sales report is
+                        ready
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 12 PM</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-account-supervisor"></i> New client
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 10 AM</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-server-network-off"></i> Server
+                        overloaded
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 05 AM</span
+                        >
+                      </a>
+                    </li>
+                    <li class="dropdown-footer">
+                      <a class="text-center" href="#"> View All </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- User Account -->
+                <li class="dropdown user-menu">
+                  <button
+                    href="#"
+                    class="dropdown-toggle nav-link"
+                    data-toggle="dropdown"
+                  >
+                    <img
+                      src="assets/img/user/user.png"
+                      class="user-image"
+                      alt="User Image"
+                    />
+                    <span class="d-none d-lg-inline-block">Abdus Salam</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <!-- User image -->
+                    <li class="dropdown-header">
+                      <img
+                        src="assets/img/user/user.png"
+                        class="img-circle"
+                        alt="User Image"
+                      />
+                      <div class="d-inline-block">
+                        Abdus Salam
+                        <small class="pt-1">iamabdus@gmail.com</small>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a href="user-profile.html">
+                        <i class="mdi mdi-account"></i> My Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="mdi mdi-email"></i> Message </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-diamond-stone"></i> Projects
+                      </a>
+                    </li>
+                    <li class="right-sidebar-in">
+                      <a href="javascript:0">
+                        <i class="mdi mdi-settings"></i> Setting
+                      </a>
+                    </li>
+
+                    <li class="dropdown-footer">
+                      <a href="index.html">
+                        <i class="mdi mdi-logout"></i> Log Out
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <!-- ====================================
+          ——— CONTENT WRAPPER
+          ===================================== -->
+        <div class="content-wrapper">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-9 col-md-12">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <ul class="nav nav-tavbs mb-5" id="myTab" role="tablist">
+                      <li class="nav-item orders-item-list">
+                        <a
+                          class="nav-btn-link active"
+                          id="actives-tab"
+                          data-toggle="tab"
+                          href="#actives"
+                          role="tab"
+                          aria-controls="actives"
+                          aria-selected="true"
+                          >Activity
+                        </a>
+                      </li>
+
+                      <li class="nav-item orders-item-list">
+                        <a
+                          class="nav-btn-link"
+                          id="details-tab"
+                          data-toggle="tab"
+                          href="#details"
+                          role="tab"
+                          aria-controls="details"
+                          aria-selected="false"
+                          >Details</a
+                        >
+                      </li>
+
+                      <li class="nav-item orders-item-list">
+                        <a
+                          class="nav-btn-link"
+                          id="requirments-tab"
+                          data-toggle="tab"
+                          href="#requirments"
+                          role="tab"
+                          aria-controls="requirments"
+                          aria-selected="false"
+                          >Requirements</a
+                        >
+                      </li>
+                      <li class="nav-item orders-item-list">
+                        <a
+                          class="nav-btn-link"
+                          id="delivery-tab"
+                          data-toggle="tab"
+                          href="#delivery"
+                          role="tab"
+                          aria-controls="delivery"
+                          aria-selected="false"
+                          >Delivery</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="tab-content" id="myTabContent">
+                  <!-- Activity -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="actives"
+                    role="tabpanel"
+                    aria-labelledby="actives-tab"
+                  >
+                    <div class="date-count">
+                      <h1>Your Active Order Remaining</h1>
+                      <div class="timer-box-group">
+                        <div class="timer-box">
+                          <div class="times" >
+                            <h1 id="days">00</h1>
+                          </div>
+                          <p>Days</p>
+                        </div>
+                        <div class="timer-box">
+                          <div class="times">
+                            <h1 id="hours">00</h1>
+                          </div>
+                          <p>Hours</p>
+                        </div>
+                        <div class="timer-box">
+                          <div class="times">
+                            <h1 id="minutes">00</h1>
+                          </div>
+                          <p>Minutes</p>
+                        </div>
+                        <div class="timer-box">
+                          <div class="times">
+                            <h1 id="seconds">00</h1>
+                          </div>
+                          <p>Seconds</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="ticketsdetails-left message-chat-box-wrapper mt-5"
+                    >
+                      <div class="orders-msg">
+                        <div class="ticket-chatbox-con">
+                          <div class="msg-user-option">
+                            <div class="msg-user">
+                              <img src="./assets/img/user/u-xl-1.jpg" alt="" />
+                              <div class="msg-user-names">
+                                <h1>Jenny Wilson</h1>
+                                <p>
+                                  <span>Last seen 14 hours ago</span> | Local
+                                  Time : Apr 08, 2023 11:17 AM
+                                </p>
+                              </div>
+                            </div>
+                            <div class="msg-option">
+                              <button>
+                                <img
+                                  src="./assets/img/icon/ticket/ticket-icon-2.svg"
+                                  alt=""
+                                />
+                              </button>
+                            </div>
+                          </div>
+                          <div class="msg-box">
+                            <div class="msg-date">
+                              <p>MONDAY AUG 29, 2021</p>
+                            </div>
+                            <div class="admin-msg">
+                              <div class="admin-msg-text">
+                                <p>
+                                  Hello, so we gonna start the project tomorrow
+                                  right? Because i wanna prepare to do some
+                                  sketching.
+                                </p>
+                                <span>
+                                  20:30 pm
+                                  <svg
+                                    width="10"
+                                    height="7"
+                                    viewBox="0 0 10 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                    <path
+                                      d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="user-msg">
+                              <div class="user-msg-img">
+                                <img
+                                  src="./assets/img/user/u-xl-1.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="user-msg-text">
+                                <p>
+                                  Hai Hassan, That’s gonna to great. Hope will
+                                  the best for tomorrow project.
+                                </p>
+                                <span>20:30 pm</span>
+                              </div>
+                            </div>
+                            <div class="admin-msg">
+                              <div class="admin-msg-text">
+                                <p>
+                                  Hello, so we gonna start the project tomorrow
+                                  right? Because i wanna prepare to do some
+                                  sketching.
+                                </p>
+                                <span>
+                                  20:30 pm
+                                  <svg
+                                    width="10"
+                                    height="7"
+                                    viewBox="0 0 10 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                    <path
+                                      d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="user-msg">
+                              <div class="user-msg-img">
+                                <img
+                                  src="./assets/img/user/u-xl-1.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="user-msg-text">
+                                <p>
+                                  Hai Hassan, That’s gonna to great. Hope will
+                                  the best for tomorrow project.
+                                </p>
+                                <span>20:30 pm</span>
+                              </div>
+                            </div>
+                            <div class="msg-date">
+                              <p>TODAY</p>
+                            </div>
+                            <div class="admin-msg">
+                              <div class="admin-msg-text">
+                                <p>
+                                  Hello, so we gonna start the project tomorrow
+                                  right? Because i wanna prepare to do some
+                                  sketching.
+                                </p>
+                                <span>
+                                  20:30 pm
+                                  <svg
+                                    width="10"
+                                    height="7"
+                                    viewBox="0 0 10 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                    <path
+                                      d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="user-msg">
+                              <div class="user-msg-img">
+                                <img
+                                  src="./assets/img/user/u-xl-1.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="user-msg-text">
+                                <p>
+                                  Hai Hassan, That’s gonna to great. Hope will
+                                  the best for tomorrow project.
+                                </p>
+                                <span>20:30 pm</span>
+                              </div>
+                            </div>
+                            <!-- Deliver Now  -->
+                            <div class="delivery-msg-con">
+                              <div class="delivery-id-user">
+                              <h4>  DELIVERY <span>#2</span></h4>
+                              </div>
+                             <div class="delivery-content-msg d-flex align-content-start gap-5">
+                              <div class="user-msg-img">
+                                <img
+                                  src="./assets/img/user/u-xl-1.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="delivery-content-items">
+                                <h4>Jenny</h4>
+                                <p>Hi Lorem ipsum dolor sit amet.
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam 
+                                </p>
+                              </div>
+                             </div>
+                             <div class="delivery-attachments mt-4 mb-3">
+                              <h4 class="mb-3">ATTACHMENTS</h4>
+                              <input type="file">
+                             </div>
+                             <div class="delivery-request-revision">
+                              <p><span class="forcs">jony</span>has until <span class="delivery-date-count">20 Jul, 17:57</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam</p>
+                             </div>
+                            </div>
+                            <!-- Deliver Btn -->
+                            <div class="delivery-msg-con mt-3">
+                             <div class="delivery-content-msg d-flex align-items-center gap-3 w-50">
+                              <div class="user-msg-img">
+                                <img
+                                  src="./assets/img/user/u-xl-1.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="delivery-content-items">
+                                <p>
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam 
+                                </p>
+                              </div>
+                             </div>
+                             <div class="delivery-content-all-btn mt-40 d-flex align-items-center gap-3">
+                              <button class='delivery-btn-items' data-bs-target="#approve-delivery" data-bs-toggle="modal" >Yes, I approve delivery</button>
+                              <button class='delivery-btn-items' data-bs-target="#still-need-revisions" data-bs-toggle="modal">I still need revisions</button>
+                              <button class='delivery-btn-items' data-bs-target="#cancel-delivery" data-bs-toggle="modal" >Cancel Delivery</button>
+                              <!-- I approve delivery Model -->
+                              <div class="modal fade" id="approve-delivery" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Approve Final Delivery</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio reprehenderit ducimus consequatur perspiciatis voluptatum, ullam excepturi facilis modi officiis eos ipsam quaerat praesentium quo, magni voluptatibus cumque, commodi amet!
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                      <button type="button" class="btn delivery-btn-items">Approve Final Delivery</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- still need revisions Model -->
+                              <div class="modal fade" id="still-need-revisions" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Approve Final Delivery</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <textarea class="w-100 p-3" name="" id="" cols="30" rows="7" placeholder="Lorem ipsum, dolor sit amet "></textarea>
+                                    </div>
+                                    <div class="modal-footer d-flex flex-column align-items-start justify-content-between">
+                                   
+                                      <div>
+                                        <label for="file-upload">
+                                          <div class="attached">
+                                            <svg
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <g>
+                                                <path
+                                                  d="M12 22C10.4491 22.0376 8.94653 21.4587 7.82179 20.3902C6.69705 19.3217 6.0419 17.8508 6 16.3V6.12999C6.02883 5.0089 6.50064 3.94489 7.31216 3.17085C8.12368 2.39682 9.20879 1.97582 10.33 1.99999C11.4529 1.97313 12.5406 2.39294 13.3543 3.16726C14.168 3.94158 14.6412 5.00713 14.67 6.12999V16.31C14.6284 16.9886 14.3295 17.6257 13.8343 18.0915C13.3391 18.5573 12.6849 18.8167 12.005 18.8167C11.3251 18.8167 10.6709 18.5573 10.1757 18.0915C9.68047 17.6257 9.38159 16.9886 9.34 16.31V6.91999C9.34 6.65478 9.44536 6.40042 9.63289 6.21289C9.82043 6.02535 10.0748 5.91999 10.34 5.91999C10.6052 5.91999 10.8596 6.02535 11.0471 6.21289C11.2346 6.40042 11.34 6.65478 11.34 6.91999V16.31C11.3599 16.4723 11.4386 16.6217 11.5611 16.7301C11.6836 16.8385 11.8415 16.8983 12.005 16.8983C12.1685 16.8983 12.3264 16.8385 12.4489 16.7301C12.5714 16.6217 12.6501 16.4723 12.67 16.31V6.12999C12.6389 5.5384 12.3758 4.98294 11.9377 4.58417C11.4996 4.18539 10.9219 3.97548 10.33 3.99999C9.73979 3.97817 9.16467 4.1893 8.72876 4.58779C8.29285 4.98629 8.0311 5.5402 8 6.12999V16.3C8.04163 17.3204 8.48597 18.2828 9.23569 18.9763C9.98541 19.6698 10.9794 20.0379 12 20C13.0206 20.0379 14.0146 19.6698 14.7643 18.9763C15.514 18.2828 15.9584 17.3204 16 16.3V6.12999C16 5.86478 16.1054 5.61042 16.2929 5.42289C16.4804 5.23535 16.7348 5.12999 17 5.12999C17.2652 5.12999 17.5196 5.23535 17.7071 5.42289C17.8946 5.61042 18 5.86478 18 6.12999V16.3C17.9581 17.8508 17.303 19.3217 16.1782 20.3902C15.0535 21.4587 13.5509 22.0376 12 22V22Z"
+                                                  fill="#AAAAAC"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </div>
+                                        </label>
+                                        <input type="file" id="file-upload"
+                                        class="file-input-box"
+                                        >
+                                       </div>
+                                       <div class="revision-btns">
+                                        <button type="button" class="btn delivery-btn-items-remove-bg" data-bs-dismiss="modal">Send Revision Request</button>
+                                      <button type="button" class="btn delivery-btn-items">Comment Directly On File</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Cancel delivery  -->
+                              <div class="modal fade" id="cancel-delivery" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Cancel Final Delivery</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio reprehenderit ducimus consequatur perspiciatis voluptatum, ullam excepturi facilis modi officiis eos ipsam quaerat praesentium quo, magni voluptatibus cumque, commodi amet!
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                      <button type="button" class="btn delivery-btn-items">Cancel Final Delivery</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                          <div class="text-input">
+                            <textarea
+                            name="the-textarea"
+                            id="the-textarea"
+                              cols="30"
+                              maxlength="1000"
+                              rows=""
+                              placeholder="Write a message here..."
+                            ></textarea>
+                            <div  id="the-count-4" class="textarea-count">
+                              <span id="currents">0</span>
+                              <span id="maximums">/ 1000</span>
+                            </div>
+                          </div>
+                          <div class="msg-sending-box">
+                            <div class="msg-sending-left">
+                         <div>
+                          <label for="file-upload">
+                            <div class="attached">
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g>
+                                  <path
+                                    d="M12 22C10.4491 22.0376 8.94653 21.4587 7.82179 20.3902C6.69705 19.3217 6.0419 17.8508 6 16.3V6.12999C6.02883 5.0089 6.50064 3.94489 7.31216 3.17085C8.12368 2.39682 9.20879 1.97582 10.33 1.99999C11.4529 1.97313 12.5406 2.39294 13.3543 3.16726C14.168 3.94158 14.6412 5.00713 14.67 6.12999V16.31C14.6284 16.9886 14.3295 17.6257 13.8343 18.0915C13.3391 18.5573 12.6849 18.8167 12.005 18.8167C11.3251 18.8167 10.6709 18.5573 10.1757 18.0915C9.68047 17.6257 9.38159 16.9886 9.34 16.31V6.91999C9.34 6.65478 9.44536 6.40042 9.63289 6.21289C9.82043 6.02535 10.0748 5.91999 10.34 5.91999C10.6052 5.91999 10.8596 6.02535 11.0471 6.21289C11.2346 6.40042 11.34 6.65478 11.34 6.91999V16.31C11.3599 16.4723 11.4386 16.6217 11.5611 16.7301C11.6836 16.8385 11.8415 16.8983 12.005 16.8983C12.1685 16.8983 12.3264 16.8385 12.4489 16.7301C12.5714 16.6217 12.6501 16.4723 12.67 16.31V6.12999C12.6389 5.5384 12.3758 4.98294 11.9377 4.58417C11.4996 4.18539 10.9219 3.97548 10.33 3.99999C9.73979 3.97817 9.16467 4.1893 8.72876 4.58779C8.29285 4.98629 8.0311 5.5402 8 6.12999V16.3C8.04163 17.3204 8.48597 18.2828 9.23569 18.9763C9.98541 19.6698 10.9794 20.0379 12 20C13.0206 20.0379 14.0146 19.6698 14.7643 18.9763C15.514 18.2828 15.9584 17.3204 16 16.3V6.12999C16 5.86478 16.1054 5.61042 16.2929 5.42289C16.4804 5.23535 16.7348 5.12999 17 5.12999C17.2652 5.12999 17.5196 5.23535 17.7071 5.42289C17.8946 5.61042 18 5.86478 18 6.12999V16.3C17.9581 17.8508 17.303 19.3217 16.1782 20.3902C15.0535 21.4587 13.5509 22.0376 12 22V22Z"
+                                    fill="#AAAAAC"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </label>
+                          <input type="file" id="file-upload"
+                          class="file-input-box"
+                          >
+                         </div>
+                              <div class="attached">
+                                <svg
+                                  width="13"
+                                  height="21"
+                                  viewBox="0 0 13 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M9.28216 7.51756H6.99316V3.54956C6.99316 3.28434 6.8878 3.02999 6.70026 2.84245C6.51273 2.65492 6.25837 2.54956 5.99316 2.54956H3.28516C3.01994 2.54956 2.76559 2.65492 2.57805 2.84245C2.39051 3.02999 2.28516 3.28434 2.28516 3.54956V9.47256C2.28501 9.73199 2.38568 9.98132 2.56593 10.1679C2.74617 10.3545 2.99188 10.4637 3.25116 10.4726L5.18816 10.5336V17.9376C5.18854 18.0637 5.23237 18.1859 5.31226 18.2835C5.39216 18.3812 5.50324 18.4483 5.62684 18.4737C5.75043 18.499 5.87898 18.4811 5.99086 18.4227C6.10274 18.3644 6.19113 18.2694 6.24116 18.1536L10.2012 8.91156C10.2664 8.75939 10.2928 8.5934 10.2781 8.42849C10.2633 8.26358 10.2079 8.10492 10.1167 7.96673C10.0255 7.82855 9.90139 7.71517 9.75556 7.63677C9.60973 7.55838 9.44772 7.51741 9.28216 7.51756ZM8.99316 3.54956V5.51756H9.28216C9.77847 5.51769 10.267 5.64095 10.704 5.87629C11.1409 6.11164 11.5127 6.45172 11.7859 6.86606C12.0591 7.2804 12.2253 7.75605 12.2695 8.2504C12.3137 8.74474 12.2345 9.24232 12.0392 9.69856L8.07916 18.9416C7.84757 19.4806 7.43714 19.9232 6.91711 20.1948C6.39708 20.4664 5.79929 20.5503 5.2246 20.4323C4.64991 20.3143 4.1335 20.0017 3.76251 19.5473C3.39152 19.0928 3.18866 18.5242 3.18816 17.9376V12.4716C2.40961 12.4464 1.67139 12.1194 1.12962 11.5597C0.587845 11 0.285009 10.2515 0.285156 9.47256V3.54956C0.285156 2.75391 0.601227 1.99085 1.16384 1.42824C1.72645 0.865631 2.48951 0.549561 3.28516 0.549561L5.99316 0.549561C6.78881 0.549561 7.55187 0.865631 8.11448 1.42824C8.67709 1.99085 8.99316 2.75391 8.99316 3.54956Z"
+                                    fill="#AAAAAC"
+                                  />
+                                </svg>
+                              </div>
+                              <div class="attached request-call-msg">
+                                <svg
+                                  width="21"
+                                  height="13"
+                                  viewBox="0 0 21 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M4.31738 2.61499C3.78695 2.61499 3.27824 2.8257 2.90317 3.20078C2.5281 3.57585 2.31738 4.08456 2.31738 4.61499V8.61499C2.31738 9.14542 2.5281 9.65413 2.90317 10.0292C3.27824 10.4043 3.78695 10.615 4.31738 10.615H10.3174C10.8478 10.615 11.3565 10.4043 11.7316 10.0292C12.1067 9.65413 12.3174 9.14542 12.3174 8.61499V4.61499C12.3174 4.08456 12.1067 3.57585 11.7316 3.20078C11.3565 2.8257 10.8478 2.61499 10.3174 2.61499H4.31738ZM14.2974 4.21999L16.3174 2.19999C16.6925 1.82526 17.2011 1.61484 17.7314 1.61499H18.3174C18.8478 1.61499 19.3565 1.8257 19.7316 2.20078C20.1067 2.57585 20.3174 3.08456 20.3174 3.61499V9.61499C20.3174 10.1454 20.1067 10.6541 19.7316 11.0292C19.3565 11.4043 18.8478 11.615 18.3174 11.615H17.7314C17.201 11.6149 16.6924 11.4041 16.3174 11.029L14.2974 9.00999C14.1994 9.99754 13.7378 10.9134 13.0022 11.5796C12.2667 12.2459 11.3098 12.6149 10.3174 12.615H4.31738C3.25652 12.615 2.2391 12.1936 1.48896 11.4434C0.73881 10.6933 0.317383 9.67586 0.317383 8.61499V4.61499C0.317383 3.55412 0.73881 2.53671 1.48896 1.78656C2.2391 1.03642 3.25652 0.61499 4.31738 0.61499L10.3174 0.61499C11.3098 0.615102 12.2667 0.98412 13.0022 1.65035C13.7378 2.31658 14.1994 3.23244 14.2974 4.21999ZM17.7324 9.61499H18.3174V3.61499H17.7314L14.7314 6.61499L17.7314 9.61499H17.7324ZM5.31738 8.61499C5.05217 8.61499 4.79781 8.50963 4.61028 8.3221C4.42274 8.13456 4.31738 7.88021 4.31738 7.61499C4.31738 7.34977 4.42274 7.09542 4.61028 6.90788C4.79781 6.72035 5.05217 6.61499 5.31738 6.61499C5.5826 6.61499 5.83695 6.72035 6.02449 6.90788C6.21203 7.09542 6.31738 7.34977 6.31738 7.61499C6.31738 7.88021 6.21203 8.13456 6.02449 8.3221C5.83695 8.50963 5.5826 8.61499 5.31738 8.61499Z"
+                                    fill="#AAAAAC"
+                                  />
+                                </svg>
+                                <span>Request a call</span>
+                              </div>
+                            </div>
+
+                            <div class="msg-sending-right">
+                              <div class="attached">
+                                <svg
+                                  width="25"
+                                  height="25"
+                                  viewBox="0 0 25 25"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M12.7892 22.781C7.26618 22.781 2.78918 18.304 2.78918 12.781C2.78918 7.25801 7.26618 2.78101 12.7892 2.78101C18.3122 2.78101 22.7892 7.25801 22.7892 12.781C22.7892 18.304 18.3122 22.781 12.7892 22.781ZM12.7892 20.781C14.9109 20.781 16.9457 19.9382 18.446 18.4379C19.9463 16.9376 20.7892 14.9027 20.7892 12.781C20.7892 10.6593 19.9463 8.62444 18.446 7.12415C16.9457 5.62386 14.9109 4.78101 12.7892 4.78101C10.6675 4.78101 8.63262 5.62386 7.13233 7.12415C5.63204 8.62444 4.78918 10.6593 4.78918 12.781C4.78918 14.9027 5.63204 16.9376 7.13233 18.4379C8.63262 19.9382 10.6675 20.781 12.7892 20.781ZM8.86918 16.175C8.81744 16.0542 8.79001 15.9244 8.78844 15.7929C8.78687 15.6615 8.8112 15.5311 8.86005 15.4091C8.90889 15.2871 8.98129 15.1759 9.07311 15.0818C9.16493 14.9878 9.27437 14.9127 9.39518 14.861C9.516 14.8093 9.64582 14.7818 9.77724 14.7803C9.90866 14.7787 10.0391 14.803 10.1611 14.8519C10.2831 14.9007 10.3943 14.9731 10.4884 15.0649C10.5824 15.1567 10.6574 15.2662 10.7092 15.387C10.884 15.7937 11.1742 16.1402 11.5439 16.3837C11.9136 16.6272 12.3465 16.757 12.7892 16.757C13.2319 16.757 13.6648 16.6272 14.0345 16.3837C14.4042 16.1402 14.6944 15.7937 14.8692 15.387C14.9209 15.2662 14.996 15.1567 15.09 15.0649C15.184 14.9731 15.2952 14.9007 15.4172 14.8519C15.5393 14.803 15.6697 14.7787 15.8011 14.7803C15.9325 14.7818 16.0624 14.8093 16.1832 14.861C16.304 14.9127 16.4134 14.9878 16.5053 15.0818C16.5971 15.1759 16.6695 15.2871 16.7183 15.4091C16.7672 15.5311 16.7915 15.6615 16.7899 15.7929C16.7884 15.9244 16.7609 16.0542 16.7092 16.175C16.3807 16.9425 15.8341 17.5966 15.1373 18.0563C14.4405 18.5161 13.624 18.7611 12.7892 18.7611C11.9544 18.7611 11.1379 18.5161 10.4411 18.0563C9.74424 17.5966 9.19769 16.9425 8.86918 16.175ZM9.78918 8.78101C10.0544 8.78101 10.3088 8.88636 10.4963 9.0739C10.6838 9.26144 10.7892 9.51579 10.7892 9.78101V11.781C10.7892 12.0462 10.6838 12.3006 10.4963 12.4881C10.3088 12.6756 10.0544 12.781 9.78918 12.781C9.52397 12.781 9.26961 12.6756 9.08208 12.4881C8.89454 12.3006 8.78918 12.0462 8.78918 11.781V9.78101C8.78918 9.51579 8.89454 9.26144 9.08208 9.0739C9.26961 8.88636 9.52397 8.78101 9.78918 8.78101ZM15.7892 8.78101C16.0544 8.78101 16.3088 8.88636 16.4963 9.0739C16.6838 9.26144 16.7892 9.51579 16.7892 9.78101V11.781C16.7892 12.0462 16.6838 12.3006 16.4963 12.4881C16.3088 12.6756 16.0544 12.781 15.7892 12.781C15.524 12.781 15.2696 12.6756 15.0821 12.4881C14.8945 12.3006 14.7892 12.0462 14.7892 11.781V9.78101C14.7892 9.51579 14.8945 9.26144 15.0821 9.0739C15.2696 8.88636 15.524 8.78101 15.7892 8.78101Z"
+                                    fill="#AAAAAC"
+                                  />
+                                </svg>
+                              </div>
+                              <div class="sending-btn">
+                                <button>
+                                  <img
+                                    src="./assets/img/icon/ticket/send-icon.svg"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Details -->
+                  <div
+                    class="tab-pane fade"
+                    id="details"
+                    role="tabpanel"
+                    aria-labelledby="details-tab"
+                  >
+                    <div class="order-details-con">
+                      <div class="order-detail-title">
+                        <h1>
+                          Want to manage orders andrack spend by projects?
+                        </h1>
+                      </div>
+                      <div class="order-detail">
+                        <div class="item-duration-price">
+                          <div class="item">
+                            <button>Item</button>
+                            <h2>Spotify Promotion - Starter</h2>
+                          </div>
+                          <div class="duration-price">
+                            <div class="duration">
+                              <button>Duration</button>
+                              <p>7</p>
+                            </div>
+                            <div class="price">
+                              <button>Price</button>
+                              <p>$49</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pack-info">
+                          <p>Engagement May Vary</p>
+                          <p>
+                            The typical Client Receives on average 5,000 Stream
+                            an 500 followers Monthly
+                          </p>
+                          <p class="details-list-item">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                              <path
+                                d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                            </svg>
+                            Reach 10k Audiences
+                          </p>
+                          <p class="details-list-item">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                              <path
+                                d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                            </svg>
+                            Distribution to curators
+                          </p>
+                          <p class="details-list-item">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                              <path
+                                d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                            </svg>
+                            Country & Genre targeting
+                          </p>
+                          <p class="details-list-item">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                              <path
+                                d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                            </svg>
+                            Cancel at anytime
+                          </p>
+                          <p class="details-list-item">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                              <path
+                                d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                fill="#2BD67B"
+                              />
+                            </svg>
+                            Starts within 24 hrs..
+                          </p>
+                        </div>
+                        <div class="pack-info-box-group">
+                          <div class="pack-info-box">
+                            <div class="pack-info-box-left">
+                              <p>Additional Track</p>
+                            </div>
+                            <div class="pack-info-box-right">
+                              <p>3</p>
+                              <p>$18</p>
+                            </div>
+                          </div>
+                          <div class="pack-info-box">
+                            <div class="pack-info-box-left">
+                              <p>Extra Revision</p>
+                            </div>
+                            <div class="pack-info-box-right">
+                              <p>10</p>
+                              <p>$10</p>
+                            </div>
+                          </div>
+                          <div class="pack-info-box">
+                            <div class="pack-info-box-left">
+                              <p>Extra 500 Followers</p>
+                            </div>
+                            <div class="pack-info-box-right">
+                              <p>20</p>
+                              <p>$50</p>
+                            </div>
+                          </div>
+                          <div class="pack-info-box">
+                            <div class="pack-info-box-left">
+                              <p>Extra 1000 Followers</p>
+                            </div>
+                            <div class="pack-info-box-right">
+                              <p>1</p>
+                              <p>$100</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Requirements -->
+                  <div
+                    class="tab-pane fade"
+                    id="requirments"
+                    role="tabpanel"
+                    aria-labelledby="requirments-tab"
+                  >
+
+                    <div class="requerments">
+                      <div class="requerments-box-title">
+                        <h1>
+                          We need the following information to start working on
+                          your order:
+                        </h1>
+                      </div>
+                      <div class="requerments-box-content">
+                        <div class="requirement-content-list">
+                          <p>1. How will you use this order ? (optional)</p>
+                          <div class="req-content-list-item">
+                            <input type="radio" />
+                            <p>For business use</p>
+                          </div>
+                          <div class="req-content-list-item">
+                            <input type="radio" />
+                            <p>For Persnol use</p>
+                          </div>
+                          <div class="req-content-list-item">
+                            <input type="radio" />
+                            <p>For Side project</p>
+                          </div>
+                        </div>
+                        <div class="requirement-content-list">
+                          <p>2. Which Industry do you work in (optional)</p>
+                          <div class="req-content-list-item">
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>
+                                Start typing to choose an industry from the list
+                              </option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="requirement-content-list">
+                          <p>
+                            3. What are you looking to achieve with this order ?
+                            (optional)
+                          </p>
+                          <div class="req-content-list-item">
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>
+                                Start typing to choose an industry from the list
+                              </option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <span
+                            >Don’t see what you’re looking for ? Type in your
+                            goal</span
+                          >
+                        </div>
+                        <div
+                          class="requirement-content-list req-content-list-textarea"
+                        >
+                          <p>4. Please provide youesign description.</p>
+                          <div class="req-content-list-item">
+                            <textarea
+                              name=""
+                              id=""
+                              cols="30"
+                              rows="10"
+                            ></textarea>
+                            <div class="the-count">
+                              <span>0</span>
+                              <span>/ 300</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="requirement-content-list">
+                          <p>
+                            5. If you have any design you can show me (optional)
+                          </p>
+                          <div
+                            class="req-content-list-item req-content-list-item-file"
+                          >
+                            <div class="file-upload">
+                              <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M3.61111 7.20141C3.71719 7.09561 3.86088 7.0362 4.0107 7.0362C4.16051 7.0362 4.30421 7.09561 4.41028 7.20141C4.46268 7.25374 4.50425 7.31589 4.53262 7.38431C4.56098 7.45272 4.57558 7.52605 4.57558 7.60011C4.57558 7.67418 4.56098 7.74751 4.53262 7.81592C4.50425 7.88434 4.46268 7.94649 4.41028 7.99882L3.21153 9.19582C3.10664 9.3005 3.02342 9.42484 2.96664 9.56173C2.90987 9.69861 2.88064 9.84534 2.88064 9.99353C2.88064 10.1417 2.90987 10.2885 2.96664 10.4253C3.02342 10.5622 3.10664 10.6866 3.21153 10.7912C3.42367 11.0028 3.71107 11.1217 4.0107 11.1217C4.31032 11.1217 4.59772 11.0028 4.80986 10.7912L7.60636 7.99882C7.65877 7.94649 7.70034 7.88434 7.7287 7.81592C7.75706 7.74751 7.77166 7.67418 7.77166 7.60011C7.77166 7.52605 7.75706 7.45272 7.7287 7.38431C7.70034 7.31589 7.65877 7.25374 7.60636 7.20141C7.55387 7.14906 7.51223 7.08687 7.48381 7.01841C7.4554 6.94994 7.44077 6.87654 7.44077 6.80241C7.44077 6.72828 7.4554 6.65488 7.48381 6.58641C7.51223 6.51794 7.55387 6.45575 7.60636 6.40341C7.71244 6.29761 7.85613 6.2382 8.00595 6.2382C8.15576 6.2382 8.29946 6.29761 8.40553 6.40341C8.56291 6.56043 8.68777 6.74696 8.77297 6.95231C8.85816 7.15766 8.90201 7.3778 8.90201 7.60011C8.90201 7.82243 8.85816 8.04257 8.77297 8.24792C8.68777 8.45327 8.56291 8.6398 8.40553 8.79682L5.60845 11.5892C5.18424 12.0126 4.60941 12.2503 4.01011 12.2503C3.41082 12.2503 2.83599 12.0126 2.41178 11.5892C2.202 11.3799 2.03557 11.1312 1.92201 10.8574C1.80845 10.5837 1.75 10.2902 1.75 9.99382C1.75 9.69744 1.80845 9.40397 1.92201 9.13021C2.03557 8.85645 2.202 8.60777 2.41178 8.39841L3.61111 7.20082V7.20141ZM10.3894 6.79891C10.2834 6.9047 10.1397 6.96412 9.98987 6.96412C9.84005 6.96412 9.69635 6.9047 9.59028 6.79891C9.53788 6.74657 9.49631 6.68442 9.46794 6.61601C9.43958 6.54759 9.42498 6.47426 9.42498 6.4002C9.42498 6.32614 9.43958 6.2528 9.46794 6.18439C9.49631 6.11598 9.53788 6.05382 9.59028 6.00149L10.789 4.80449C10.8939 4.69981 10.9771 4.57547 11.0339 4.43859C11.0907 4.30171 11.1199 4.15497 11.1199 4.00678C11.1199 3.85859 11.0907 3.71186 11.0339 3.57498C10.9771 3.43809 10.8939 3.31375 10.789 3.20907C10.5769 2.99748 10.2895 2.87866 9.98987 2.87866C9.69024 2.87866 9.40284 2.99748 9.1907 3.20907L6.39478 6.00149C6.34238 6.05382 6.30081 6.11598 6.27244 6.18439C6.24408 6.2528 6.22948 6.32614 6.22948 6.4002C6.22948 6.47426 6.24408 6.54759 6.27244 6.61601C6.30081 6.68442 6.34238 6.74657 6.39478 6.79891C6.44727 6.85125 6.48892 6.91344 6.51733 6.98191C6.54575 7.05038 6.56037 7.12378 6.56037 7.19791C6.56037 7.27204 6.54575 7.34544 6.51733 7.41391C6.48892 7.48237 6.44727 7.54456 6.39478 7.59691C6.28871 7.7027 6.14501 7.76212 5.9952 7.76212C5.84538 7.76212 5.70169 7.7027 5.59561 7.59691C5.43823 7.43988 5.31337 7.25335 5.22818 7.048C5.14299 6.84265 5.09913 6.62252 5.09913 6.4002C5.09913 6.17788 5.14299 5.95774 5.22818 5.75239C5.31337 5.54704 5.43823 5.36052 5.59561 5.20349L8.3927 2.41107C8.81691 1.98775 9.39173 1.75 9.99103 1.75C10.5903 1.75 11.1652 1.98775 11.5894 2.41107C11.7991 2.62044 11.9656 2.86911 12.0791 3.14288C12.1927 3.41664 12.2511 3.71011 12.2511 4.00649C12.2511 4.30287 12.1927 4.59634 12.0791 4.8701C11.9656 5.14387 11.7991 5.39254 11.5894 5.60191L10.3894 6.79949V6.79891Z"
+                                  fill="#444444"
+                                />
+                              </svg>
+                              <span>Attach file</span>
+                            </div>
+                            <div class="file-upload-max">
+                              <span>Attach file 5GB Max</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="req-start-order">
+                        <div class="req-start-order-content">
+                          <input type="checkbox" />
+                          <p>
+                            The infortmation i provided is accurate and
+                            complete. Any changes will requires the seller’s
+                            approval, and may be subjectto additional coasts
+                          </p>
+                        </div>
+                        <div class="req-start-order-content-btn">
+                          <p>Remind Me Later</p>
+                          <button class="start-order-btn">Start Order</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add New Question -->
+                    <div class="requerments mt-5">
+                      <ul class="new-question-item-con" id="list-new-question">
+                        <li class="mb-3">
+                        </li>
+                      </ul>
+                      <ul class="new-question-item-con" id="list-new-question2">
+                        <li class="mb-3">
+                        </li>
+                      </ul>
+                      
+                     <div class="question-container">
+                      <button class="add-new-question" data-bs-target="#collapse-1" data-bs-toggle="collapse" >
+                        + Add New Question
+                      </button>
+                      <div class="collapse add-question-wrappers mt-30" id="collapse-1">
+                        <div class="add-question-header mb-2 d-flex align-items-center justify-content-between">
+                          <span>Add a question</span>
+                          <div class="input-group-items">
+                            <input type="checkbox">
+                            <span>Required</span>
+                          </div>
+                        </div>
+                        <div class="input-groups">
+                          <textarea class="w-100 p-2"  name="" id="" cols="30" rows="8" placeholder="Request necessary details such as dimensions, brand guidelines and more"></textarea>
+                          <div id="the-count-3" class="text-area-count">
+                            <span id="current3">0</span>
+                            <span id="maximum3">/ 400</span>
+                          </div>
+                        </div>
+                        <div class="input-groups mt-2">
+                          <label for="">Get it in form of</label>
+                          <div class="input-groups-select">
+                            <select onchange="toggleInputFields() ,toggleInputField2()">
+                              <option value="one" class="" selected>Free text</option>
+                              <option value="two">Multiple</option>
+                              <option value="three">Attachment</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div id="multiple" style="display: none;">
+                           <div class="input-container" id="formFieldsContainer">
+                            <input type="text" id="input-box1" class="input-fuild-item" placeholder="Add option" >
+                            <input type="text" id="input-box2" class="input-fuild-item" placeholder="Add option">
+                          </div>
+                          <div class="input-fuild-items mb-3 d-flex gap-4">
+                            <button class="add-new-question" onclick="addFormField()">+ Add New Option</button>
+                            <button class="add-new-question" onclick="removeFormField()">X Remove Option</button>
+                          </div>
+                        </div>
+                        <div id="attachment" style="display: none;">
+                           <div class="input-container" id="formFieldsContainer">                         
+                            <input type="file" class="input-fuild-item" placeholder="Add option">
+                          </div>
+                        </div>
+                      
+                        <div class="input-groups-btn d-flex justify-content-end gap-4 mb-30">
+                          <button class="cancel-btn">Cancel</button>
+                          <button class="add-btn" onclick="addList2()">Add</button>
+                        </div>
+                      </div>
+                     </div>
+                     <div class="add-question-btn-con d-flex align-items-center justify-content-between">
+                      <button class="cancel-btn">Cancel</button>
+                      <button class="add-btn">Save</button>
+                     </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="delivery"
+                    role="tabpanel"
+                    aria-labelledby="delivery-tab"
+                  >
+                    <div class="delivery">
+                      <div class="delivery-items">
+                        <img
+                          src="./assets/img/products/delivery-img.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="delivery-items">
+                        <h3>The best things are worth the wait</h3>
+                      </div>
+                      <div class="delivery-items">
+                        <p>
+                          <a href="#">Rasel8687</a> sould dliever order by
+                          <span>apr 23, 1:19 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12">
+                <div class="orders-right">
+                  <div
+                    class="order-deliver-again-wrapper d-flex align-items-center  justify-content-center gap-3 flex-md-column"
+                  >
+                    <h3>Want to deliver again?</h3>
+                    <button
+                      class="order-deliver-again"
+                      type="button"
+                      data-toggle="modal"
+                      data-target=".bd-example-modal-lg"
+                    >
+                      Deliver Now
+                    </button>
+                    <!-- =========== modal start ============ -->
+
+                    <div
+                      class="modal fade bd-example-modal-lg"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myLargeModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content p-4">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">
+                              Deliver your work
+                            </h5>
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">
+                                <img src="./assets//img/icon/close.svg" alt="">
+                              </span>
+                            </button>
+                          </div>
+                          <div
+                            class="deliver-body-content d-flex align-items-end  flex-column gap-3 w-100 mt-3"
+                          >
+                            <div
+                              class="deliver-input-field-item d-flex align-items-center justify-content-between w-100"
+                            >
+                              <div class="deliver-quick-response">
+                                <button
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseExample"
+                                  aria-expanded="false"
+                                  aria-controls="collapseExample"
+                                  class="quick-response-btn"
+                                >
+                                  Use a quick response
+                                  <span class="ml-3">
+                                    <svg
+                                      width="11"
+                                      height="7"
+                                      viewBox="0 0 11 7"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M1 1L5.26503 5.26512L9.53015 1"
+                                        stroke="black"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                      /></svg>
+                                    </span>
+                                </button>
+                       
+                              </div>
+                              
+                              <div
+                                class="deliver-times d-flex align-items-center gap-3"
+                              >
+                                <p>Local time: <span> 6:20</span></p>
+                                <p>Last seen 3 days ago</p>
+                              </div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                              <div class="card card-body w-100">
+                                Some placeholder content for the collapse
+                                component. This panel is hidden by default
+                                but revealed when the user activates the
+                                relevant trigger.
+                              </div>
+                            </div>
+                            <div class="deliver-input-field-item w-100">
+                              <textarea
+                                name="the-textarea"
+                                id="the-textarea"
+                                cols="30"
+                                rows="6"
+                                maxlength="300"
+                                placeholder="Describe your delivery in details"
+                                autofocus
+                              ></textarea>
+                              <div id="the-count" class="text-area-count">
+                                <span id="current">0</span>
+                                <span id="maximum">/ 300</span>
+                              </div>
+                            </div>
+                            <div class="deliver-input-field-item deliver-input-field-items">
+                              <input
+                                type="file"
+                                name=""
+                                id="file-8"
+                                className="inputfile"
+                                multiple
+                              />
+                            </div>
+                            <div class="deliver-input-field-item">
+                              <button class="deliver-btn save-draft">Save Draft</button>
+                              <button class="deliver-btn ">Deliver</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========== modal End ============ -->
+                    <div class="order-delivery-btn">
+                      <button class="extend-delivery-btn" type="button"
+                      data-toggle="modal"
+                      data-target=".bd-example-modal-lg-2">Extend delivery date</button>
+                               <!-- =========== modal start ============ -->
+
+                    <div
+                    class="modal fade bd-example-modal-lg-2"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="myLargeModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content p-4">
+                        <div class="modal-header d-flex justify-content-between">
+                          <h5 class="modal-title" id="exampleModalLongTitle">
+                           Request: Extend delivery date
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div
+                          class="deliver-body-content d-flex flex-column gap-3 w-100 mt-3"
+                        >
+                         <div class="delivery-input-item">
+                          <div class="p-3 deliver-content-text">
+                            <p><span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V11.25H9.75V12.75ZM9.75 9.75H8.25V5.25H9.75V9.75Z" fill="#444"/>
+                              </svg>
+                              </span>
+                            Sometimes you just need more time, but keep in the this can affect buyer satisfaction
+                            </p>
+                          </div>
+                         </div>
+                          <div class="delivery-input-field-item d-flex flex-column gap-2">
+                            <label for="">How many days do you want to add to original date</label>
+                            <input type="number" class="number-input">
+                            <span>you can ask up to 60 days</span>
+                          </div>
+                          <div class="delivery-input-field-item d-flex align-items-center gap-5 ">
+                            <div class="delivery-date-item">
+                              <h3>Original date</h3>
+                              <p>16 Jun 2023</p>
+                            </div>
+                            <div class="delivery-date-item">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </div>
+                            <div class="delivery-date-item">
+                              <h3>New date</h3>
+                              <p>16 Jun 2023</p>
+                            </div>
+                          </div>
+                          <div class="deliver-input-field-item delivery-input-field-item w-100">
+                          <label for="">Help the buyer understand</label>
+                            <textarea
+                              name="the-textarea"
+                              id="the-textarea"
+                              cols="30"
+                              rows="6"
+                              maxlength="300"
+                              placeholder="Describe your delivery in details"
+                              autofocus
+                            ></textarea>
+                            <div id="the-count-2" class="text-area-count">
+                              <span id="currents">0</span>
+                              <span id="maximums">/ 300</span>
+                            </div>
+                          </div>
+                          <div class="deliver-input-field-item d-flex justify-content-end">
+                            <button class="deliver-btn">Deliver</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- =========== modal End ============ -->
+                    </div>
+                  </div>
+                  <div class="order-details-o">
+                    <div class="orders-details-title d-flex justify-content-between">
+                      <h1>Order Details</h1>
+                      <span class="ml-3">
+                        <svg
+                          width="11"
+                          height="7"
+                          viewBox="0 0 11 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 1L5.26503 5.26512L9.53015 1"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          /></svg>
+                        </span>
+                    </div>
+                    <div class="oder-details-project-item">
+                      <img src="./assets/img/products/project-img.png" alt="" />
+                      <a href="">Ui Ux Design & Web Developing Service</a>
+                    </div>
+                    <div class="order-info-box">
+                      <div class="order-info-box-left">
+                        <img
+                          src="./assets/img/products/icon-staff.png"
+                          alt=""
+                        />
+                        <p>Staff-</p>
+                      </div>
+                      <div class="order-info-box-right">
+                        <p>Mh Jibon</p>
+                      </div>
+                    </div>
+                    <div class="order-info-box">
+                      <div class="order-info-box-left">
+                        <svg
+                          width="33"
+                          height="32"
+                          viewBox="0 0 33 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16.3203" cy="16" r="16" fill="#38C173" />
+                          <g clip-path="url(#clip0_1548_1334)">
+                            <path
+                              d="M16.32 8.33325C15.0014 8.33325 13.7125 8.72425 12.6162 9.45679C11.5199 10.1893 10.6654 11.2305 10.1608 12.4487C9.65621 13.6669 9.52419 15.0073 9.78142 16.3005C10.0387 17.5937 10.6736 18.7816 11.6059 19.714C12.5383 20.6463 13.7262 21.2813 15.0194 21.5385C16.3126 21.7957 17.653 21.6637 18.8712 21.1591C20.0894 20.6545 21.1306 19.8 21.8631 18.7037C22.5957 17.6074 22.9867 16.3185 22.9867 14.9999C22.9867 14.1244 22.8142 13.2575 22.4792 12.4487C22.1442 11.6399 21.6531 10.9049 21.034 10.2859C20.415 9.66682 19.6801 9.17575 18.8712 8.84072C18.0624 8.50569 17.1955 8.33325 16.32 8.33325ZM16.32 20.3333C15.2652 20.3333 14.234 20.0205 13.3569 19.4344C12.4799 18.8484 11.7963 18.0154 11.3926 17.0409C10.989 16.0664 10.8833 14.994 11.0891 13.9594C11.2949 12.9249 11.8029 11.9746 12.5488 11.2287C13.2946 10.4828 14.2449 9.97485 15.2795 9.76906C16.3141 9.56328 17.3864 9.66889 18.361 10.0726C19.3355 10.4762 20.1685 11.1598 20.7545 12.0369C21.3405 12.9139 21.6533 13.9451 21.6533 14.9999C21.6533 16.4144 21.0914 17.771 20.0912 18.7712C19.091 19.7713 17.7345 20.3333 16.32 20.3333Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M18.9867 14.3334H16.9867V12.3334C16.9867 12.1566 16.9164 11.987 16.7914 11.862C16.6664 11.737 16.4968 11.6667 16.32 11.6667C16.1432 11.6667 15.9736 11.737 15.8486 11.862C15.7236 11.987 15.6533 12.1566 15.6533 12.3334V15.0001C15.6533 15.1769 15.7236 15.3465 15.8486 15.4715C15.9736 15.5965 16.1432 15.6667 16.32 15.6667H18.9867C19.1635 15.6667 19.333 15.5965 19.4581 15.4715C19.5831 15.3465 19.6533 15.1769 19.6533 15.0001C19.6533 14.8233 19.5831 14.6537 19.4581 14.5287C19.333 14.4037 19.1635 14.3334 18.9867 14.3334Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1548_1334">
+                              <rect
+                                width="16"
+                                height="16"
+                                fill="white"
+                                transform="translate(8.32031 7)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <p>Delivery Date</p>
+                      </div>
+                      <div class="order-info-box-right">
+                        <p>24 Oct, 2021</p>
+                      </div>
+                    </div>
+                    <div class="order-info-box">
+                      <div class="order-info-box-left">
+                        <svg
+                          width="33"
+                          height="32"
+                          viewBox="0 0 33 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16.3203" cy="16" r="16" fill="#38C173" />
+                          <g clip-path="url(#clip0_1548_1343)">
+                            <path
+                              d="M15.5866 9.3999L22.1859 10.3432L23.1286 16.9432L17.0006 23.0712C16.8755 23.1962 16.706 23.2664 16.5292 23.2664C16.3524 23.2664 16.1829 23.1962 16.0579 23.0712L9.45789 16.4712C9.33291 16.3462 9.2627 16.1767 9.2627 15.9999C9.2627 15.8231 9.33291 15.6536 9.45789 15.5286L15.5866 9.3999ZM16.0579 10.8146L10.8719 15.9999L16.5292 21.6566L21.7146 16.4712L21.0079 11.5212L16.0579 10.8146ZM17.4712 15.0572C17.2211 14.807 17.0807 14.4678 17.0807 14.114C17.0807 13.9388 17.1153 13.7654 17.1823 13.6036C17.2494 13.4418 17.3477 13.2947 17.4716 13.1709C17.5954 13.0471 17.7425 12.9488 17.9043 12.8818C18.0662 12.8148 18.2396 12.7804 18.4148 12.7804C18.7685 12.7805 19.1078 12.921 19.3579 13.1712C19.608 13.4214 19.7485 13.7607 19.7484 14.1145C19.7483 14.4682 19.6077 14.8075 19.3576 15.0576C19.1074 15.3077 18.7681 15.4481 18.4143 15.4481C18.0606 15.448 17.7213 15.3074 17.4712 15.0572Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1548_1343">
+                              <rect
+                                width="16"
+                                height="16"
+                                fill="white"
+                                transform="translate(8.32031 8)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                        <p>Total Price</p>
+                      </div>
+                      <div class="order-info-box-right">
+                        <p>$277</p>
+                      </div>
+                    </div>
+                    <div class="order-info-box">
+                      <div class="order-info-box-left">
+                        <svg
+                          width="33"
+                          height="32"
+                          viewBox="0 0 33 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16.3203" cy="16" r="16" fill="#38C173" />
+                          <path
+                            d="M21.0851 11.4999H11.8767L11.09 10.0896C11.0017 9.93135 10.8346 9.83325 10.6533 9.83325H9.65332C9.37718 9.83325 9.15332 10.0571 9.15332 10.3333C9.15332 10.6094 9.37718 10.8333 9.65332 10.8333H10.3597L11.1362 12.225L12.9269 16.1872L12.9287 16.1912L13.0865 16.5402L11.2886 18.4579C11.1593 18.5958 11.1188 18.7948 11.184 18.9723C11.2491 19.1497 11.4088 19.2752 11.5966 19.2967L13.2353 19.484C15.2851 19.7182 17.3549 19.7182 19.4047 19.484L21.0434 19.2967C21.3178 19.2653 21.5148 19.0175 21.4834 18.7431C21.4521 18.4688 21.2042 18.2718 20.9299 18.3032L19.2911 18.4904C17.3168 18.7161 15.3232 18.7161 13.3489 18.4904L12.6985 18.4161L14.0181 17.0086C14.0309 16.9949 14.0427 16.9808 14.0537 16.9662L14.5555 17.0315C15.2588 17.123 15.9697 17.141 16.6767 17.085C18.3257 16.9546 19.854 16.17 20.921 14.906L21.3063 14.4494C21.3193 14.4341 21.3313 14.418 21.3423 14.4012L22.0606 13.3066C22.5697 12.5308 22.0131 11.4999 21.0851 11.4999ZM14.0908 15.9626C13.9806 15.9483 13.8855 15.8782 13.839 15.7773L13.8382 15.7753L12.3578 12.4999H21.0851C21.2177 12.4999 21.2972 12.6472 21.2245 12.758L20.5228 13.8274L20.1568 14.2609C19.2621 15.3208 17.9806 15.9788 16.5979 16.0882C15.9602 16.1386 15.3189 16.1224 14.6846 16.0399L14.0908 15.9626Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M12.6533 20.3333C12.101 20.3333 11.6533 20.781 11.6533 21.3333C11.6533 21.8855 12.101 22.3333 12.6533 22.3333C13.2056 22.3333 13.6533 21.8855 13.6533 21.3333C13.6533 20.781 13.2056 20.3333 12.6533 20.3333Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.9867 21.3333C18.9867 20.781 19.4344 20.3333 19.9867 20.3333C20.5389 20.3333 20.9867 20.781 20.9867 21.3333C20.9867 21.8855 20.5389 22.3333 19.9867 22.3333C19.4344 22.3333 18.9867 21.8855 18.9867 21.3333Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <p>Order ID</p>
+                      </div>
+                      <div class="order-info-box-right">
+                        <p>#MP_2B1C1</p>
+                      </div>
+                    </div>
+
+                    <div class="order-track-box">
+                      <h4>Track Order</h4>
+                      <div class="order-track-box-items">
+                        <div class="order-track-box-item">
+                          <div class="order-track-box-icon">
+                            <svg
+                              width="18"
+                              height="18"
+                              viewBox="0 0 18 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M15.0201 5.76301C14.8984 5.5521 14.724 5.37633 14.5141 5.25286C14.3042 5.12939 14.0659 5.06243 13.8224 5.05851H4.80476L4.39615 3.46633C4.35486 3.31263 4.26276 3.17744 4.13483 3.08277C4.0069 2.98811 3.85069 2.93955 3.69164 2.94499H2.28263C2.09578 2.94499 1.91659 3.01922 1.78447 3.15134C1.65235 3.28346 1.57813 3.46265 1.57812 3.6495C1.57813 3.83635 1.65235 4.01554 1.78447 4.14766C1.91659 4.27978 2.09578 4.354 2.28263 4.354H3.15622L5.10065 11.5822C5.14194 11.7359 5.23404 11.8711 5.36197 11.9658C5.4899 12.0604 5.64611 12.109 5.80516 12.1036H12.1457C12.2758 12.1032 12.4033 12.0668 12.5139 11.9984C12.6246 11.93 12.7142 11.8323 12.7727 11.7161L15.0835 7.09453C15.1836 6.8846 15.2303 6.65314 15.2192 6.4208C15.2081 6.18846 15.1397 5.96248 15.0201 5.76301Z"
+                                fill="white"
+                              />
+                              <path
+                                d="M5.45422 15.6257C6.03785 15.6257 6.51098 15.1526 6.51098 14.569C6.51098 13.9853 6.03785 13.5122 5.45422 13.5122C4.87059 13.5122 4.39746 13.9853 4.39746 14.569C4.39746 15.1526 4.87059 15.6257 5.45422 15.6257Z"
+                                fill="white"
+                              />
+                              <path
+                                d="M12.4982 15.6257C13.0818 15.6257 13.5549 15.1526 13.5549 14.569C13.5549 13.9853 13.0818 13.5122 12.4982 13.5122C11.9145 13.5122 11.4414 13.9853 11.4414 14.569C11.4414 15.1526 11.9145 15.6257 12.4982 15.6257Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </div>
+                          <p>Order Placed</p>
+                        </div>
+                        <div class="order-track-box-item">
+                          <div
+                            class="order-track-box-icon order-track-box-icon-white"
+                          >
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.1589 2.38403V4.17206C11.1589 4.4882 11.0333 4.79139 10.8097 5.01494C10.5862 5.23848 10.283 5.36407 9.96685 5.36407H5.19879C4.88265 5.36407 4.57945 5.23848 4.35591 5.01494C4.13236 4.79139 4.00677 4.4882 4.00677 4.17206V2.38403C3.53256 2.38403 3.07777 2.57241 2.74245 2.90773C2.40713 3.24305 2.21875 3.69784 2.21875 4.17206V11.3241C2.21875 11.7984 2.40713 12.2531 2.74245 12.5885C3.07777 12.9238 3.53256 13.1122 4.00677 13.1122H11.1589C11.6331 13.1122 12.0879 12.9238 12.4232 12.5885C12.7585 12.2531 12.9469 11.7984 12.9469 11.3241V4.17206C12.9469 3.69784 12.7585 3.24305 12.4232 2.90773C12.0879 2.57241 11.6331 2.38403 11.1589 2.38403Z"
+                                fill="#38C173"
+                              />
+                              <path
+                                d="M9.96563 1.19238H5.19757C4.8684 1.19238 4.60156 1.45922 4.60156 1.78839V4.17242C4.60156 4.50159 4.8684 4.76843 5.19757 4.76843H9.96563C10.2948 4.76843 10.5616 4.50159 10.5616 4.17242V1.78839C10.5616 1.45922 10.2948 1.19238 9.96563 1.19238Z"
+                                fill="#38C173"
+                              />
+                            </svg>
+                          </div>
+                          <p>Requirement submitted</p>
+                        </div>
+                        <div class="order-track-box-item">
+                          <div
+                            class="order-track-box-icon order-track-box-icon-white"
+                          >
+                            <svg
+                              width="16"
+                              height="15"
+                              viewBox="0 0 16 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.51913 14.5842C7.58665 14.5842 7.65417 14.5842 7.72169 14.5842C6.23628 14.5167 4.95343 14.0441 3.80561 13.0988C2.6578 12.1536 1.9151 10.9382 1.50999 9.52035C1.30743 9.58787 1.10487 9.65539 0.969838 9.65539C0.767282 9.72291 0.632243 9.72291 0.429688 9.79042C0.497206 9.65539 0.497204 9.45283 0.564722 9.31779C0.902315 8.03494 1.17239 6.81961 1.44247 5.53676V5.46924C2.52276 6.48202 3.60306 7.49479 4.68336 8.57509C4.27825 8.71013 3.87313 8.84516 3.46802 8.91268C3.53554 9.11524 3.60306 9.25028 3.67058 9.45283C4.07569 10.2631 4.61583 11.0058 5.29102 11.6134C6.10124 12.2886 6.97898 12.6937 7.99176 12.7612C9.00454 12.8963 9.9498 12.6937 10.8951 12.3561C12.1104 11.8835 13.1907 11.2083 14.1359 10.2631C13.3932 12.2886 11.2327 14.3817 8.19432 14.5167C8.26184 14.5167 8.32936 14.5167 8.39687 14.5167"
+                                fill="#38C173"
+                              />
+                              <path
+                                d="M15.4849 4.7263C15.4849 4.86133 15.4173 4.92885 15.4173 5.06389C15.0797 6.34674 14.8097 7.69711 14.4721 8.97996V9.04748C13.3918 8.0347 12.3115 7.02193 11.2312 5.94163C11.6363 5.80659 12.0414 5.67156 12.4465 5.60404C12.379 5.53652 12.379 5.40148 12.3115 5.33396C11.9064 4.3887 11.3662 3.57848 10.6235 2.97082C9.8133 2.29563 8.93555 1.89052 7.85526 1.75548C6.91 1.62044 6.03226 1.75548 5.15452 2.09307C3.87166 2.5657 2.72386 3.24089 1.71108 4.18615C1.71108 4.18615 1.71107 4.18615 1.64355 4.25367C1.64355 4.18615 1.71108 4.11863 1.71108 4.11863C2.65634 2.02556 4.20926 0.742704 6.43737 0.135037C6.84248 0.0675185 7.18008 0 7.58519 0C7.65271 0 7.6527 0 7.72022 0C7.85526 0 8.05781 0 8.19285 0C8.32789 0 8.53044 0 8.66548 0.0675185C9.67826 0.202556 10.6235 0.47263 11.5013 1.0803C12.9867 2.02556 13.9319 3.30841 14.4046 5.06389V5.13141C14.6071 5.06389 14.8772 4.99637 15.0797 4.92885C15.2148 4.79382 15.3498 4.7263 15.4849 4.7263Z"
+                                fill="#38C173"
+                              />
+                            </svg>
+                          </div>
+                          <p>Order In Process</p>
+                        </div>
+                        <div class="order-track-box-item">
+                          <div
+                            class="order-track-box-icon order-track-box-icon-white"
+                          >
+                            <svg
+                              width="15"
+                              height="14"
+                              viewBox="0 0 15 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.4061 1.73291H3.3181C2.85844 1.73291 2.41761 1.91551 2.09259 2.24054C1.76756 2.56556 1.58496 3.00639 1.58496 3.46605V12.1318C1.58514 12.2341 1.61251 12.3346 1.66428 12.4229C1.71605 12.5112 1.79036 12.5842 1.87959 12.6344C1.96594 12.6833 2.06343 12.7092 2.16267 12.7095C2.26636 12.7094 2.36814 12.6815 2.45731 12.6286L5.05124 11.0572C5.14712 11.0001 5.25748 10.972 5.36899 10.9763H11.4061C11.8658 10.9763 12.3066 10.7937 12.6316 10.4687C12.9566 10.1437 13.1392 9.70285 13.1392 9.24319V3.46605C13.1392 3.00639 12.9566 2.56556 12.6316 2.24054C12.3066 1.91551 11.8658 1.73291 11.4061 1.73291ZM5.05124 6.93234C4.93698 6.93234 4.82529 6.89845 4.73028 6.83497C4.63528 6.77149 4.56123 6.68127 4.51751 6.5757C4.47378 6.47014 4.46234 6.35398 4.48463 6.24192C4.50692 6.12985 4.56194 6.02691 4.64274 5.94612C4.72353 5.86532 4.82647 5.8103 4.93854 5.78801C5.0506 5.76572 5.16676 5.77716 5.27233 5.82088C5.37789 5.86461 5.46812 5.93866 5.5316 6.03366C5.59508 6.12866 5.62896 6.24036 5.62896 6.35462C5.62896 6.50784 5.56809 6.65478 5.45975 6.76313C5.35141 6.87147 5.20446 6.93234 5.05124 6.93234ZM7.3621 6.93234C7.24784 6.93234 7.13614 6.89845 7.04114 6.83497C6.94613 6.77149 6.87209 6.68127 6.82836 6.5757C6.78464 6.47014 6.77319 6.35398 6.79549 6.24192C6.81778 6.12985 6.8728 6.02691 6.95359 5.94612C7.03439 5.86532 7.13733 5.8103 7.24939 5.78801C7.36146 5.76572 7.47762 5.77716 7.58318 5.82088C7.68874 5.86461 7.77897 5.93866 7.84245 6.03366C7.90593 6.12866 7.93981 6.24036 7.93981 6.35462C7.93981 6.50784 7.87895 6.65478 7.7706 6.76313C7.66226 6.87147 7.51532 6.93234 7.3621 6.93234ZM9.67295 6.93234C9.55869 6.93234 9.447 6.89845 9.35199 6.83497C9.25699 6.77149 9.18294 6.68127 9.13922 6.5757C9.09549 6.47014 9.08405 6.35398 9.10634 6.24192C9.12863 6.12985 9.18365 6.02691 9.26445 5.94612C9.34524 5.86532 9.44818 5.8103 9.56025 5.78801C9.67231 5.76572 9.78847 5.77716 9.89404 5.82088C9.9996 5.86461 10.0898 5.93866 10.1533 6.03366C10.2168 6.12866 10.2507 6.24036 10.2507 6.35462C10.2507 6.50784 10.1898 6.65478 10.0815 6.76313C9.97312 6.87147 9.82617 6.93234 9.67295 6.93234Z"
+                                fill="#38C173"
+                              />
+                            </svg>
+                          </div>
+                          <p>Review Delievery</p>
+                        </div>
+                        <div class="order-track-box-item">
+                          <div
+                            class="order-track-box-icons order-track-box-icon-white"
+                          >
+                            <svg
+                              width="17"
+                              height="16"
+                              viewBox="0 0 17 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.40996 1.33032C7.09449 1.33032 5.80855 1.72041 4.71477 2.45125C3.62099 3.18209 2.76849 4.22086 2.26508 5.4362C1.76167 6.65154 1.62996 7.98887 1.88659 9.27907C2.14323 10.5693 2.77669 11.7544 3.70688 12.6846C4.63706 13.6148 5.82218 14.2482 7.11238 14.5049C8.40259 14.7615 9.73991 14.6298 10.9553 14.1264C12.1706 13.623 13.2094 12.7705 13.9402 11.6767C14.6711 10.5829 15.0611 9.29697 15.0611 7.98149C15.0611 7.10805 14.8891 6.24316 14.5548 5.4362C14.2206 4.62924 13.7307 3.89602 13.1131 3.27841C12.4954 2.66079 11.7622 2.17087 10.9553 1.83661C10.1483 1.50236 9.28341 1.33032 8.40996 1.33032ZM11.27 6.39186L8.23038 10.3826C8.16842 10.4631 8.08885 10.5283 7.99777 10.5732C7.90669 10.6182 7.80651 10.6417 7.70494 10.642C7.60391 10.6425 7.50409 10.62 7.41305 10.5762C7.322 10.5324 7.24213 10.4685 7.1795 10.3892L5.55661 8.3207C5.50289 8.2517 5.46329 8.1728 5.44007 8.08849C5.41685 8.00418 5.41046 7.91613 5.42127 7.82935C5.43208 7.74258 5.45987 7.65878 5.50307 7.58275C5.54626 7.50671 5.604 7.43993 5.67301 7.38621C5.81236 7.27773 5.98911 7.22904 6.16436 7.25087C6.25113 7.26168 6.33493 7.28948 6.41096 7.33267C6.487 7.37586 6.55378 7.43361 6.6075 7.50261L7.69164 8.88605L10.2058 5.56047C10.2591 5.49059 10.3256 5.43189 10.4015 5.38773C10.4775 5.34356 10.5614 5.31479 10.6485 5.30305C10.7356 5.29132 10.8241 5.29685 10.9091 5.31934C10.994 5.34182 11.0737 5.38082 11.1436 5.4341C11.2135 5.48738 11.2722 5.5539 11.3163 5.62986C11.3605 5.70583 11.3893 5.78975 11.401 5.87683C11.4127 5.96391 11.4072 6.05246 11.3847 6.1374C11.3622 6.22235 11.3232 6.30203 11.27 6.37191V6.39186Z"
+                                fill="#38C173"
+                              />
+                            </svg>
+                          </div>
+                          <p>Order Completed</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-deliver-again-wrapper w-100">
+                  <div class="private-add-note-btn-con d-flex align-items-start justify-content-between">
+                    <div class="private-note">
+                      <h4>Private note</h4>
+                      <span>Only visible to you</span>
+                    </div>
+                    <button class="private-add-note-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add Note</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-4 popupBox">
+      <div class="modal-header">
+       <div class="">
+        <h5 class="modal-title" id="exampleModalLabel">Private note</h5>
+        <p>Only visible to you</p>
+       </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <textarea name="" class="private-input" id="input-box" id="" cols="30" rows="6"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="deliver-btn" onclick="addList()" data-bs-dismiss="modal" aria-label="Close">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+                  </div>
+                  <ul id='list-container' class="private-con-list">
+                    <li>
+                  
+                    </li>
+                    
+                  </ul>
+                  <button id="see-more">See more</button>
+                 
+                  </div>
+                  <div class="oders-faq-centers">
+                    <div class="order-info-box">
+                      <p class="order-dis">
+                        Any Question we have Answers Checkout
+                        <span> FAQs </span>
+                      </p>
+                    </div>
+                    <div class="order-info-box">
+                      <p class="order-dis">
+                        Have any issues with your order? Visit the
+                        <span> Resolution Center </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Content -->
+        </div>
+        <!-- End Content Wrapper -->
+
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+          <div class="copyright bg-white">
+            <p>
+              Copyright &copy; <span id="copy-year"></span> a by
+              <a
+                class="text-success"
+                href="https://musicpromotiontoday.com/"
+                target="_blank"
+              >
+                Musicpromotiontoday
+              </a>
+            </p>
+          </div>
+          <script>
+            var d = new Date();
+            var year = d.getFullYear();
+            document.getElementById("copy-year").innerHTML = year;
+          </script>
+        </footer>
+      </div>
+      <!-- End Page Wrapper -->
+    </div>
+    <!-- End Wrapper -->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/simplebar/simplebar.min.js"></script>
+
+    <script src="assets/plugins/charts/Chart.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+
+    <script src="assets/js/checbox-select.js"></script>
+
+    <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
+    <script src="assets/js/vector-map.js"></script>
+
+    <script src="assets/plugins/daterangepicker/moment.min.js"></script>
+    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="assets/js/date-range.js"></script>
+
+    <script src="assets/plugins/toastr/toastr.min.js"></script>
+
+    <script src="assets/js/sleek.js"></script>
+    <link href="assets/options/optionswitch.css" rel="stylesheet" />
+    <script src="assets/options/optionswitcher.js"></script>
+  </body>
+</html>

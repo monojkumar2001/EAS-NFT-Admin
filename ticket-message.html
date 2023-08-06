@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful bootstrap admin dashboard, which allows you to build products like admin panels, content management systems and CRMs etc."
+    />
+
+    <!-- theme meta -->
+    <meta name="theme-name" content="sleek" />
+
+    <title>MUSICPROMOTION Admin Dashboard Template</title>
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- PLUGINS CSS STYLE -->
+    <link href="assets/plugins/simplebar/simplebar.css" rel="stylesheet" />
+    <link href="assets/plugins/nprogress/nprogress.css" rel="stylesheet" />
+
+    <!-- No Extra plugin used -->
+    <link
+      href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/daterangepicker/daterangepicker.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link href="assets/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <!-- SLEEK CSS -->
+    <link id="sleek-css" rel="stylesheet" href="assets/css/sleek.css" />
+    <link id="sleek-css" rel="stylesheet" href="assets/css/sidebar.css" />
+    <link id="sleek-css" rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- FAVICON -->
+    <link href="assets/img/favicon.png" rel="shortcut icon" />
+    <script src="assets/plugins/nprogress/nprogress.js"></script>
+  </head>
+  <body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+    <script>
+      NProgress.configure({ showSpinner: false });
+      NProgress.start();
+    </script>
+    <!-- <div id="toaster"></div> -->
+
+    <!-- ====================================
+    ——— WRAPPER
+    ===================================== -->
+    <div class="wrapper">
+      <!-- ====================================
+          ——— LEFT SIDEBAR WITH OUT FOOTER
+        ===================================== -->
+        <aside class="left-sidebar bg-sidebar">
+          <div id="sidebar" class="sidebar">
+            <!-- Aplication Brand -->
+            <div class="app-brands">
+              <a href="/index.html" title="Sleek Dashboard">
+                <img src="./assets/img/logo.png" alt="" />
+              </a>
+            </div>
+  
+            <!-- begin sidebar scrollbar -->
+            <div class="" data-simplebar style="height: 100%">
+              <!-- sidebar menu -->
+              <ul class="nav sidebar-inner" id="sidebar-menu">
+                <li class="has-sub">
+                  <a
+                    class="sidenav-item-link"
+                    href="javascript:void(0)"
+                    data-toggle="collapse"
+                    data-target="#dashboard"
+                    aria-expanded="false"
+                    aria-controls="dashboard"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.98127 2.5135V6.63816H7.10593V2.5135H2.98127ZM2.98127 0.451172H7.10593C7.6529 0.451172 8.17746 0.668452 8.56422 1.05521C8.95098 1.44198 9.16826 1.96654 9.16826 2.5135V6.63816C9.16826 7.18512 8.95098 7.70968 8.56422 8.09645C8.17746 8.48321 7.6529 8.70049 7.10593 8.70049H2.98127C2.43431 8.70049 1.90975 8.48321 1.52299 8.09645C1.13623 7.70968 0.918945 7.18512 0.918945 6.63816V2.5135C0.918945 1.96654 1.13623 1.44198 1.52299 1.05521C1.90975 0.668452 2.43431 0.451172 2.98127 0.451172V0.451172ZM15.3552 0.451172H19.4799C20.0269 0.451172 20.5514 0.668452 20.9382 1.05521C21.325 1.44198 21.5422 1.96654 21.5422 2.5135V6.63816C21.5422 7.18512 21.325 7.70968 20.9382 8.09645C20.5514 8.48321 20.0269 8.70049 19.4799 8.70049H15.3552C14.8083 8.70049 14.2837 8.48321 13.897 8.09645C13.5102 7.70968 13.2929 7.18512 13.2929 6.63816V2.5135C13.2929 1.96654 13.5102 1.44198 13.897 1.05521C14.2837 0.668452 14.8083 0.451172 15.3552 0.451172V0.451172ZM15.3552 2.5135V6.63816H19.4799V2.5135H15.3552ZM15.3552 12.8251H19.4799C20.0269 12.8251 20.5514 13.0424 20.9382 13.4292C21.325 13.816 21.5422 14.3405 21.5422 14.8875V19.0121C21.5422 19.5591 21.325 20.0837 20.9382 20.4704C20.5514 20.8572 20.0269 21.0745 19.4799 21.0745H15.3552C14.8083 21.0745 14.2837 20.8572 13.897 20.4704C13.5102 20.0837 13.2929 19.5591 13.2929 19.0121V14.8875C13.2929 14.3405 13.5102 13.816 13.897 13.4292C14.2837 13.0424 14.8083 12.8251 15.3552 12.8251ZM15.3552 14.8875V19.0121H19.4799V14.8875H15.3552ZM2.98127 12.8251H7.10593C7.6529 12.8251 8.17746 13.0424 8.56422 13.4292C8.95098 13.816 9.16826 14.3405 9.16826 14.8875V19.0121C9.16826 19.5591 8.95098 20.0837 8.56422 20.4704C8.17746 20.8572 7.6529 21.0745 7.10593 21.0745H2.98127C2.43431 21.0745 1.90975 20.8572 1.52299 20.4704C1.13623 20.0837 0.918945 19.5591 0.918945 19.0121V14.8875C0.918945 14.3405 1.13623 13.816 1.52299 13.4292C1.90975 13.0424 2.43431 12.8251 2.98127 12.8251ZM2.98127 14.8875V19.0121H7.10593V14.8875H2.98127Z"
+                        fill="white"
+                      />
+                    </svg>
+  
+                    <span class="nav-text">Dashboard </span>
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="collapse" id="dashboard" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="active">
+                        <a class="sidenav-item-link" href="/index.html">
+                          <span class="nav-text">User Dashboard</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a class="sidenav-item-link" href="/analytics.html">
+                          <span class="nav-text">Analytics</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a
+                    class="sidenav-item-link"
+                    href="javascript:void(0)"
+                    data-toggle="collapse"
+                    data-target="#message"
+                    aria-expanded="false"
+                    aria-controls="message"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455Zm-.692-2H20V5H4v13.385L5.763 17ZM11 10h2v2h-2v-2Zm-4 0h2v2H7v-2Zm8 0h2v2h-2v-2Z"
+                      />
+                    </svg>
+                    <span class="nav-text">Messages</span>
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="collapse" id="message" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="active">
+                        <a class="sidenav-item-link" href="/message.html">
+                          <span class="nav-text">User Message</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a class="sidenav-item-link" href="/message-preview.html">
+                          <span class="nav-text">Message Details</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a
+                    class="sidenav-item-link"
+                    href="javascript:void(0)"
+                    data-toggle="collapse"
+                    data-target="#users"
+                    aria-expanded="false"
+                    aria-controls="users"
+                  >
+                    <svg
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.18262 4.84342H18.1826V1.96842H2.18262V4.84342ZM18.1826 6.76009V18.2601C18.1826 18.5143 18.0773 18.758 17.8897 18.9377C17.7022 19.1175 17.4478 19.2184 17.1826 19.2184H3.18262C2.9174 19.2184 2.66305 19.1175 2.47551 18.9377C2.28797 18.758 2.18262 18.5143 2.18262 18.2601V6.76009H1.18262C0.917401 6.76009 0.663047 6.65912 0.47551 6.4794C0.287974 6.29968 0.182617 6.05592 0.182617 5.80176V1.01009C0.182617 0.755925 0.287974 0.51217 0.47551 0.332447C0.663047 0.152725 0.917401 0.0517578 1.18262 0.0517578L19.1826 0.0517578C19.4478 0.0517578 19.7022 0.152725 19.8897 0.332447C20.0773 0.51217 20.1826 0.755925 20.1826 1.01009V5.80176C20.1826 6.05592 20.0773 6.29968 19.8897 6.4794C19.7022 6.65912 19.4478 6.76009 19.1826 6.76009H18.1826ZM4.18262 17.3018H16.1826V6.76009H4.18262V17.3018ZM8.18262 13.4684H12.1826C12.4478 13.4684 12.7022 13.5694 12.8897 13.7491C13.0773 13.9288 13.1826 14.1726 13.1826 14.4268C13.1826 14.6809 13.0773 14.9247 12.8897 15.1044C12.7022 15.2841 12.4478 15.3851 12.1826 15.3851H8.18262C7.9174 15.3851 7.66305 15.2841 7.47551 15.1044C7.28797 14.9247 7.18262 14.6809 7.18262 14.4268C7.18262 14.1726 7.28797 13.9288 7.47551 13.7491C7.66305 13.5694 7.9174 13.4684 8.18262 13.4684Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <span class="nav-text">Users </span>
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="collapse" id="users" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="active">
+                        <a class="sidenav-item-link" href="/user-list.html">
+                          <span class="nav-text">User List</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a class="sidenav-item-link" href="/customer-list.html">
+                          <span class="nav-text">Customer List</span>
+                        </a>
+                      </li>
+             
+                      <li class="">
+                        <a class="sidenav-item-link" href="/Subscriber-list.html">
+                          <span class="nav-text">Subscriber List</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a class="sidenav-item-link" href="#">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.1826 5.98626V3.12912H2.18262V5.98626H18.1826ZM18.1826 10.272H2.18262V17.4148H18.1826V10.272ZM2.18262 0.271973H18.1826C18.7131 0.271973 19.2218 0.572992 19.5968 1.10881C19.9719 1.64463 20.1826 2.37135 20.1826 3.12912V17.4148C20.1826 18.1726 19.9719 18.8993 19.5968 19.4351C19.2218 19.971 18.7131 20.272 18.1826 20.272H2.18262C1.65218 20.272 1.14348 19.971 0.768404 19.4351C0.393331 18.8993 0.182617 18.1726 0.182617 17.4148V3.12912C0.182617 2.37135 0.393331 1.64463 0.768404 1.10881C1.14348 0.572992 1.65218 0.271973 2.18262 0.271973ZM4.18262 13.1291H5.18262C5.44783 13.1291 5.70219 13.2796 5.88972 13.5475C6.07726 13.8154 6.18262 14.1788 6.18262 14.5577C6.18262 14.9366 6.07726 15.2999 5.88972 15.5678C5.70219 15.8357 5.44783 15.9863 5.18262 15.9863H4.18262C3.9174 15.9863 3.66305 15.8357 3.47551 15.5678C3.28797 15.2999 3.18262 14.9366 3.18262 14.5577C3.18262 14.1788 3.28797 13.8154 3.47551 13.5475C3.66305 13.2796 3.9174 13.1291 4.18262 13.1291ZM9.18262 13.1291H14.1826C14.4478 13.1291 14.7022 13.2796 14.8897 13.5475C15.0773 13.8154 15.1826 14.1788 15.1826 14.5577C15.1826 14.9366 15.0773 15.2999 14.8897 15.5678C14.7022 15.8357 14.4478 15.9863 14.1826 15.9863H9.18262C8.9174 15.9863 8.66305 15.8357 8.47551 15.5678C8.28797 15.2999 8.18262 14.9366 8.18262 14.5577C8.18262 14.1788 8.28797 13.8154 8.47551 13.5475C8.66305 13.2796 8.9174 13.1291 9.18262 13.1291Z"
+                        fill="#fff"
+                      />
+                    </svg>
+  
+                    <span class="nav-text">Transactions</span>
+                  </a>
+                </li>
+                <li class="has-sub">
+                  <a class="sidenav-item-link" href="#">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.29461 10.2691C7.39706 10.2254 7.50724 10.2027 7.61863 10.2023C7.73002 10.2019 7.84036 10.2238 7.94313 10.2668C8.0459 10.3097 8.13901 10.3729 8.21696 10.4524C8.29491 10.532 8.35611 10.6264 8.39695 10.7301C8.43779 10.8337 8.45744 10.9445 8.45474 11.0558C8.45203 11.1672 8.42703 11.2769 8.38121 11.3784C8.33539 11.4799 8.26967 11.5712 8.18796 11.6469C8.10624 11.7226 8.01018 11.7812 7.90544 11.8191C7.34839 12.0386 6.8703 12.4207 6.53336 12.9156C6.19643 13.4105 6.01625 13.9954 6.01628 14.5941V16.0441C6.01628 16.2651 6.10407 16.4771 6.26035 16.6334C6.41663 16.7896 6.6286 16.8774 6.84961 16.8774H13.5163C13.7373 16.8774 13.9493 16.7896 14.1055 16.6334C14.2618 16.4771 14.3496 16.2651 14.3496 16.0441V14.6716C14.3497 14.0537 14.162 13.4503 13.8114 12.9415C13.4607 12.4326 12.9637 12.0424 12.3863 11.8224C12.2809 11.7859 12.1839 11.7285 12.1011 11.6538C12.0183 11.579 11.9514 11.4884 11.9042 11.3873C11.8571 11.2862 11.8307 11.1767 11.8267 11.0652C11.8227 10.9537 11.8411 10.8426 11.8808 10.7384C11.9205 10.6341 11.9808 10.5389 12.058 10.4584C12.1352 10.3779 12.2278 10.3137 12.3302 10.2696C12.4327 10.2256 12.543 10.2025 12.6545 10.2018C12.7661 10.2012 12.8766 10.2229 12.9796 10.2658C13.8726 10.6059 14.6412 11.2094 15.1835 11.9962C15.7258 12.783 16.0162 13.716 16.0163 14.6716V16.0441C16.0163 16.7071 15.7529 17.343 15.284 17.8119C14.8152 18.2807 14.1793 18.5441 13.5163 18.5441H6.84961C6.18657 18.5441 5.55068 18.2807 5.08184 17.8119C4.613 17.343 4.34961 16.7071 4.34961 16.0441V14.5941C4.34972 13.6609 4.63067 12.7493 5.15591 11.978C5.68115 11.2066 6.42636 10.6112 7.29461 10.2691ZM10.1829 1.87744C11.067 1.87744 11.9148 2.22863 12.54 2.85375C13.1651 3.47887 13.5163 4.32672 13.5163 5.21077V6.87744C13.5163 7.7615 13.1651 8.60934 12.54 9.23446C11.9148 9.85959 11.067 10.2108 10.1829 10.2108C9.29889 10.2108 8.45104 9.85959 7.82592 9.23446C7.2008 8.60934 6.84961 7.7615 6.84961 6.87744V5.21077C6.84961 4.32672 7.2008 3.47887 7.82592 2.85375C8.45104 2.22863 9.29889 1.87744 10.1829 1.87744ZM10.1829 3.54411C9.74092 3.54411 9.31699 3.7197 9.00443 4.03226C8.69187 4.34482 8.51628 4.76875 8.51628 5.21077V6.87744C8.51628 7.31947 8.69187 7.74339 9.00443 8.05595C9.31699 8.36851 9.74092 8.54411 10.1829 8.54411C10.625 8.54411 11.0489 8.36851 11.3615 8.05595C11.674 7.74339 11.8496 7.31947 11.8496 6.87744V5.21077C11.8496 4.76875 11.674 4.34482 11.3615 4.03226C11.0489 3.7197 10.625 3.54411 10.1829 3.54411Z"
+                        fill="#fff"
+                      />
+                    </svg>
+  
+                    <span class="nav-text">Email Template</span>
+                  </a>
+                </li>
+                <li class="has-sub">
+                  <a class="sidenav-item-link" href="#">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.1826 8.44376C19.8566 8.62702 19.5853 8.89379 19.3965 9.21664C19.2078 9.53949 19.1084 9.90678 19.1086 10.2808C19.1086 11.0698 19.5416 11.7568 20.1826 12.1178L19.4656 14.5238C19.0781 14.4571 18.6796 14.5003 18.3153 14.6485C17.9511 14.7968 17.6357 15.044 17.4048 15.3624C17.1739 15.6807 17.0368 16.0573 17.009 16.4496C16.9812 16.8419 17.0639 17.2341 17.2476 17.5818L15.1856 19.1838C14.9126 18.96 14.5877 18.8085 14.2408 18.7432C13.8939 18.6779 13.5361 18.701 13.2005 18.8102C12.8648 18.9195 12.562 19.1115 12.32 19.3684C12.078 19.6254 11.9046 19.9392 11.8156 20.2808L8.52562 20.2728C8.4357 19.9328 8.262 19.6208 8.0204 19.3653C7.7788 19.1097 7.47701 18.9188 7.1426 18.81C6.8082 18.7012 6.45186 18.6779 6.10615 18.7423C5.76044 18.8068 5.43639 18.9568 5.16362 19.1788L3.10362 17.5638C3.28219 17.2175 3.36117 16.8285 3.33176 16.44C3.30235 16.0515 3.16571 15.6788 2.93704 15.3634C2.70838 15.048 2.39666 14.8022 2.03659 14.6534C1.67653 14.5047 1.28224 14.4587 0.897617 14.5208L0.182617 12.1058C0.502566 11.9206 0.768131 11.6544 0.952621 11.3341C1.13711 11.0137 1.23402 10.6504 1.23362 10.2808C1.23362 9.50076 0.812617 8.82076 0.182617 8.45576L0.897617 6.04076C1.28231 6.10301 1.67674 6.05725 2.03697 5.90856C2.39719 5.75988 2.70907 5.51412 2.93787 5.19866C3.16666 4.88319 3.3034 4.51041 3.33284 4.12182C3.36228 3.73323 3.28327 3.3441 3.10462 2.99776L5.16262 1.38276C5.43539 1.60471 5.75944 1.75476 6.10515 1.81917C6.45086 1.88359 6.8072 1.86033 7.1416 1.75151C7.47601 1.6427 7.7778 1.4518 8.0194 1.19627C8.261 0.940743 8.4347 0.628733 8.52462 0.288762L11.8166 0.280762C11.9056 0.62237 12.079 0.93611 12.321 1.19309C12.563 1.45007 12.8658 1.64203 13.2015 1.7513C13.5371 1.86056 13.8949 1.88362 14.2418 1.81834C14.5887 1.75306 14.9136 1.60155 15.1866 1.37776L17.2466 2.98076C17.0629 3.32845 16.9802 3.72065 17.008 4.11291C17.0358 4.50518 17.1729 4.88182 17.4038 5.20015C17.6347 5.51848 17.9501 5.76576 18.3143 5.91398C18.6786 6.0622 19.0771 6.10543 19.4646 6.03876L20.1826 8.44276V8.44376ZM15.0056 3.96076C15.0056 3.89776 15.0076 3.83576 15.0106 3.77276L14.9306 3.71076C14.1517 3.92296 13.3275 3.90065 12.5612 3.64664C11.7949 3.39263 11.1206 2.9182 10.6226 2.28276L9.71862 2.28476C9.22254 2.91751 8.55136 3.39042 7.78859 3.64468C7.02582 3.89894 6.20513 3.92331 5.42862 3.71476L5.33362 3.79076C5.37127 4.69344 5.11031 5.58335 4.59111 6.32273C4.07192 7.06211 3.32346 7.60972 2.46162 7.88076C2.96443 8.57955 3.23453 9.41888 3.23362 10.2798C3.23362 11.1618 2.95362 11.9948 2.46162 12.6798C3.32346 12.9508 4.07192 13.4984 4.59111 14.2378C5.11031 14.9772 5.37127 15.8671 5.33362 16.7698L5.42962 16.8448C6.20601 16.637 7.02633 16.6617 7.78878 16.9159C8.55124 17.1701 9.22227 17.6426 9.71862 18.2748L10.6226 18.2768C11.1202 17.6412 11.7944 17.1667 12.5606 16.9126C13.3267 16.6586 14.1509 16.6364 14.9296 16.8488L15.0096 16.7868C14.9684 15.8813 15.2279 14.9876 15.7475 14.2449C16.2672 13.5023 17.0178 12.9523 17.8826 12.6808C17.3794 11.9818 17.1089 11.1421 17.1096 10.2808C17.1096 9.39876 17.3906 8.56476 17.8826 7.88076C17.0486 7.61857 16.32 7.09714 15.8027 6.39231C15.2855 5.68748 15.0066 4.83602 15.0066 3.96176L15.0056 3.96076ZM10.1826 14.2808C9.12175 14.2808 8.10434 13.8593 7.35419 13.1092C6.60404 12.359 6.18262 11.3416 6.18262 10.2808C6.18262 9.2199 6.60404 8.20248 7.35419 7.45233C8.10434 6.70219 9.12175 6.28076 10.1826 6.28076C11.2435 6.28076 12.2609 6.70219 13.011 7.45233C13.7612 8.20248 14.1826 9.2199 14.1826 10.2808C14.1826 11.3416 13.7612 12.359 13.011 13.1092C12.2609 13.8593 11.2435 14.2808 10.1826 14.2808ZM10.1826 12.2808C10.713 12.2808 11.2218 12.07 11.5968 11.695C11.9719 11.3199 12.1826 10.8112 12.1826 10.2808C12.1826 9.75033 11.9719 9.24162 11.5968 8.86655C11.2218 8.49148 10.713 8.28076 10.1826 8.28076C9.65218 8.28076 9.14348 8.49148 8.7684 8.86655C8.39333 9.24162 8.18262 9.75033 8.18262 10.2808C8.18262 10.8112 8.39333 11.3199 8.7684 11.695C9.14348 12.07 9.65218 12.2808 10.1826 12.2808Z"
+                        fill="#fff"
+                      />
+                    </svg>
+  
+                    <span class="nav-text">Setting</span>
+                  </a>
+                </li>
+                <li class="has-sub">
+                  <a
+                    class="sidenav-item-link"
+                    href="javascript:void(0)"
+                    data-toggle="collapse"
+                    data-target="#Invoice"
+                    aria-expanded="false"
+                    aria-controls="Invoice"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.5962 11.3524H14.2382C14.3695 11.3524 14.4996 11.3783 14.6209 11.4285C14.7422 11.4788 14.8525 11.5524 14.9453 11.6453C15.0382 11.7382 15.1118 11.8484 15.1621 11.9697C15.2123 12.0911 15.2382 12.2211 15.2382 12.3524C15.2382 12.4837 15.2123 12.6138 15.1621 12.7351C15.1118 12.8564 15.0382 12.9667 14.9453 13.0595C14.8525 13.1524 14.7422 13.226 14.6209 13.2763C14.4996 13.3265 14.3695 13.3524 14.2382 13.3524H8.5962L9.7182 14.4744C9.90571 14.6621 10.011 14.9165 10.0109 15.1818C10.0108 15.447 9.90534 15.7014 9.7177 15.8889C9.53006 16.0764 9.27562 16.1817 9.01035 16.1816C8.74508 16.1815 8.49071 16.0761 8.3032 15.8884L5.4752 13.0604C5.38187 12.9677 5.30779 12.8575 5.25724 12.7361C5.20669 12.6147 5.18066 12.4844 5.18066 12.3529C5.18066 12.2214 5.20669 12.0912 5.25724 11.9697C5.30779 11.8483 5.38187 11.7381 5.4752 11.6454L8.3022 8.81741C8.48971 8.62977 8.74408 8.52431 9.00935 8.52421C9.27462 8.52412 9.52906 8.62941 9.7167 8.81691C9.90434 9.00442 10.0098 9.25879 10.0099 9.52406C10.01 9.78933 9.90471 10.0438 9.7172 10.2314L8.5962 11.3524ZM18.1822 3.52441C18.4474 3.52441 18.7018 3.62977 18.8893 3.81731C19.0768 4.00484 19.1822 4.2592 19.1822 4.52441V20.5244C19.1822 20.7896 19.0768 21.044 18.8893 21.2315C18.7018 21.4191 18.4474 21.5244 18.1822 21.5244C17.917 21.5244 17.6626 21.4191 17.4751 21.2315C17.2876 21.044 17.1822 20.7896 17.1822 20.5244V4.52441C17.1822 4.2592 17.2876 4.00484 17.4751 3.81731C17.6626 3.62977 17.917 3.52441 18.1822 3.52441Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <span class="nav-text">Invoice</span>
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="collapse" id="Invoice" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="active">
+                        <a class="sidenav-item-link" href="/invoice-list.html">
+                          <span class="nav-text">Invoice List</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a
+                    class="sidenav-item-link"
+                    href="javascript:void(0)"
+                    data-toggle="collapse"
+                    data-target="#ticket"
+                    aria-expanded="false"
+                    aria-controls="ticket"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.5962 11.3524H14.2382C14.3695 11.3524 14.4996 11.3783 14.6209 11.4285C14.7422 11.4788 14.8525 11.5524 14.9453 11.6453C15.0382 11.7382 15.1118 11.8484 15.1621 11.9697C15.2123 12.0911 15.2382 12.2211 15.2382 12.3524C15.2382 12.4837 15.2123 12.6138 15.1621 12.7351C15.1118 12.8564 15.0382 12.9667 14.9453 13.0595C14.8525 13.1524 14.7422 13.226 14.6209 13.2763C14.4996 13.3265 14.3695 13.3524 14.2382 13.3524H8.5962L9.7182 14.4744C9.90571 14.6621 10.011 14.9165 10.0109 15.1818C10.0108 15.447 9.90534 15.7014 9.7177 15.8889C9.53006 16.0764 9.27562 16.1817 9.01035 16.1816C8.74508 16.1815 8.49071 16.0761 8.3032 15.8884L5.4752 13.0604C5.38187 12.9677 5.30779 12.8575 5.25724 12.7361C5.20669 12.6147 5.18066 12.4844 5.18066 12.3529C5.18066 12.2214 5.20669 12.0912 5.25724 11.9697C5.30779 11.8483 5.38187 11.7381 5.4752 11.6454L8.3022 8.81741C8.48971 8.62977 8.74408 8.52431 9.00935 8.52421C9.27462 8.52412 9.52906 8.62941 9.7167 8.81691C9.90434 9.00442 10.0098 9.25879 10.0099 9.52406C10.01 9.78933 9.90471 10.0438 9.7172 10.2314L8.5962 11.3524ZM18.1822 3.52441C18.4474 3.52441 18.7018 3.62977 18.8893 3.81731C19.0768 4.00484 19.1822 4.2592 19.1822 4.52441V20.5244C19.1822 20.7896 19.0768 21.044 18.8893 21.2315C18.7018 21.4191 18.4474 21.5244 18.1822 21.5244C17.917 21.5244 17.6626 21.4191 17.4751 21.2315C17.2876 21.044 17.1822 20.7896 17.1822 20.5244V4.52441C17.1822 4.2592 17.2876 4.00484 17.4751 3.81731C17.6626 3.62977 17.917 3.52441 18.1822 3.52441Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <span class="nav-text">Ticket</span>
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="collapse" id="ticket" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="active">
+                        <a class="sidenav-item-link" href=" /ticket-list.html">
+                          <span class="nav-text">Ticket List</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a class="sidenav-item-link" href="/ticket-message.html">
+                          <span class="nav-text">Ticket Message</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a
+                          class="sidenav-item-link"
+                          href="/ticket-catagory-list.html"
+                        >
+                          <span class="nav-text">Ticket Catagory List</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a
+                    class="sidenav-item-link"
+                    href="javascript:void(0)"
+                    data-toggle="collapse"
+                    data-target="#coupons"
+                    aria-expanded="false"
+                    aria-controls="coupons"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.5962 11.3524H14.2382C14.3695 11.3524 14.4996 11.3783 14.6209 11.4285C14.7422 11.4788 14.8525 11.5524 14.9453 11.6453C15.0382 11.7382 15.1118 11.8484 15.1621 11.9697C15.2123 12.0911 15.2382 12.2211 15.2382 12.3524C15.2382 12.4837 15.2123 12.6138 15.1621 12.7351C15.1118 12.8564 15.0382 12.9667 14.9453 13.0595C14.8525 13.1524 14.7422 13.226 14.6209 13.2763C14.4996 13.3265 14.3695 13.3524 14.2382 13.3524H8.5962L9.7182 14.4744C9.90571 14.6621 10.011 14.9165 10.0109 15.1818C10.0108 15.447 9.90534 15.7014 9.7177 15.8889C9.53006 16.0764 9.27562 16.1817 9.01035 16.1816C8.74508 16.1815 8.49071 16.0761 8.3032 15.8884L5.4752 13.0604C5.38187 12.9677 5.30779 12.8575 5.25724 12.7361C5.20669 12.6147 5.18066 12.4844 5.18066 12.3529C5.18066 12.2214 5.20669 12.0912 5.25724 11.9697C5.30779 11.8483 5.38187 11.7381 5.4752 11.6454L8.3022 8.81741C8.48971 8.62977 8.74408 8.52431 9.00935 8.52421C9.27462 8.52412 9.52906 8.62941 9.7167 8.81691C9.90434 9.00442 10.0098 9.25879 10.0099 9.52406C10.01 9.78933 9.90471 10.0438 9.7172 10.2314L8.5962 11.3524ZM18.1822 3.52441C18.4474 3.52441 18.7018 3.62977 18.8893 3.81731C19.0768 4.00484 19.1822 4.2592 19.1822 4.52441V20.5244C19.1822 20.7896 19.0768 21.044 18.8893 21.2315C18.7018 21.4191 18.4474 21.5244 18.1822 21.5244C17.917 21.5244 17.6626 21.4191 17.4751 21.2315C17.2876 21.044 17.1822 20.7896 17.1822 20.5244V4.52441C17.1822 4.2592 17.2876 4.00484 17.4751 3.81731C17.6626 3.62977 17.917 3.52441 18.1822 3.52441Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <span class="nav-text">Coupons</span>
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="collapse" id="coupons" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="active">
+                        <a class="sidenav-item-link" href="/coupon-list.html">
+                          <span class="nav-text">Coupon List</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a
+                          class="sidenav-item-link"
+                          href="/coupon-usage-list.html"
+                        >
+                          <span class="nav-text">Coupon Usage List</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a class="sidenav-item-link" href="/support-dashboard.html">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.1816 22.9243C6.65864 22.9243 2.18164 18.4473 2.18164 12.9243C2.18164 7.40132 6.65864 2.92432 12.1816 2.92432C17.7046 2.92432 22.1816 7.40132 22.1816 12.9243C22.1816 18.4473 17.7046 22.9243 12.1816 22.9243ZM12.1816 20.9243C14.3034 20.9243 16.3382 20.0815 17.8385 18.5812C19.3388 17.0809 20.1816 15.046 20.1816 12.9243C20.1816 10.8026 19.3388 8.76775 17.8385 7.26746C16.3382 5.76717 14.3034 4.92432 12.1816 4.92432C10.0599 4.92432 8.02508 5.76717 6.52479 7.26746C5.0245 8.76775 4.18164 10.8026 4.18164 12.9243C4.18164 15.046 5.0245 17.0809 6.52479 18.5812C8.02508 20.0815 10.0599 20.9243 12.1816 20.9243ZM12.1816 10.9243C12.4469 10.9243 12.7012 11.0297 12.8887 11.2172C13.0763 11.4047 13.1816 11.6591 13.1816 11.9243V16.9243C13.1816 17.1895 13.0763 17.4439 12.8887 17.6314C12.7012 17.819 12.4469 17.9243 12.1816 17.9243C11.9164 17.9243 11.6621 17.819 11.4745 17.6314C11.287 17.4439 11.1816 17.1895 11.1816 16.9243V11.9243C11.1816 11.6591 11.287 11.4047 11.4745 11.2172C11.6621 11.0297 11.9164 10.9243 12.1816 10.9243ZM12.1816 9.92432C11.9164 9.92432 11.6621 9.81896 11.4745 9.63142C11.287 9.44389 11.1816 9.18953 11.1816 8.92432C11.1816 8.6591 11.287 8.40475 11.4745 8.21721C11.6621 8.02967 11.9164 7.92432 12.1816 7.92432C12.4469 7.92432 12.7012 8.02967 12.8887 8.21721C13.0763 8.40475 13.1816 8.6591 13.1816 8.92432C13.1816 9.18953 13.0763 9.44389 12.8887 9.63142C12.7012 9.81896 12.4469 9.92432 12.1816 9.92432Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <span class="nav-text">Support</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      <!-- ====================================
+        ——— PAGE WRAPPER
+        ===================================== -->
+      <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header" id="header">
+          <nav class="navbar navbar-static-top navbar-expand-lg">
+            <!-- Sidebar toggle button -->
+            <button id="sidebar-toggler" class="sidebar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+            <!-- search form -->
+            <div class="search-form d-none d-lg-inline-block">
+              <div class="input-group">
+                <button
+                  type="button"
+                  name="search"
+                  id="search-btn"
+                  class="btn btn-flat"
+                >
+                  <i class="mdi mdi-magnify"></i>
+                </button>
+                <input
+                  type="text"
+                  name="query"
+                  id="search-input"
+                  class="form-control"
+                  placeholder="Search something.."
+                  autofocus
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="dropdown notifications-menu custom-dropdown">
+                  <button
+                    class="dropdown-toggle notify-toggler custom-dropdown-toggler"
+                  >
+                    <i class="mdi mdi-bell-outline"></i>
+                  </button>
+
+                  <div
+                    class="card card-default dropdown-notify dropdown-menu-right mb-0"
+                  >
+                    <div class="card-header card-header-border-bottom px-3">
+                      <h2>Notifications</h2>
+                    </div>
+
+                    <div class="card-body px-0 py-3">
+                      <ul
+                        class="nav nav-tabs nav-style-border p-0 justify-content-between"
+                        id="myTab"
+                        role="tablist"
+                      >
+                        <li class="nav-item mx-3 my-0 py-0">
+                          <a
+                            class="nav-link active pb-3"
+                            id="home2-tab"
+                            data-toggle="tab"
+                            href="#home2"
+                            role="tab"
+                            aria-controls="home2"
+                            aria-selected="true"
+                            >All (11)</a
+                          >
+                        </li>
+
+                        <li class="nav-item mx-3 my-0 py-0">
+                          <a
+                            class="nav-link pb-3"
+                            id="profile2-tab"
+                            data-toggle="tab"
+                            href="#profile2"
+                            role="tab"
+                            aria-controls="profile2"
+                            aria-selected="false"
+                            >Msgs (6)</a
+                          >
+                        </li>
+
+                        <li class="nav-item mx-3 my-0 py-0">
+                          <a
+                            class="nav-link pb-3"
+                            id="contact2-tab"
+                            data-toggle="tab"
+                            href="#contact2"
+                            role="tab"
+                            aria-controls="contact2"
+                            aria-selected="false"
+                            >Others (5)</a
+                          >
+                        </li>
+                      </ul>
+
+                      <div class="tab-content" id="myTabContent3">
+                        <div
+                          class="tab-pane fade show active"
+                          id="home2"
+                          role="tabpanel"
+                          aria-labelledby="home2-tab"
+                        >
+                          <ul
+                            class="list-unstyled"
+                            data-simplebar
+                            style="height: 360px"
+                          >
+                            <li>
+                            
+                                <a
+                                href="javscript:void(0)"                              
+                              >
+                               <a href="/message-preview.html" class="media media-message media-notification">
+                                <div class="position-relative mr-3">
+                                  <img
+                                    class="rounded-circle"
+                                    src="assets/img/user/u2.jpg"
+                                    alt="Image"
+                                  />
+                                  <span class="status away"></span>
+                                </div>
+                                <div
+                                  class="media-body d-flex justify-content-between"
+                                >
+                                  <div class="message-contents">
+                                    <h4 class="title">Aarn</h4>
+                                    <p class="last-msg">
+                                      Lorem ipsum dolor sit, amet consectetur
+                                      adipisicing elit. Nam itaque doloremque
+                                      odio, eligendi delectus vitae.
+                                    </p>
+
+                                    <span
+                                      class="font-size-12 font-weight-medium text-secondary"
+                                    >
+                                      <i class="mdi mdi-clock-outline"></i> 30
+                                      min ago...
+                                    </span>
+                                  </div>
+                                </div>
+                               </a>
+                              </a>
+                           
+                            </li>
+                            <li>
+                            
+                                <a
+                                href="javscript:void(0)"                              
+                              >
+                               <a href="/message-preview.html" class="media media-message media-notification media-active">
+                                <div class="position-relative mr-3">
+                                  <img
+                                    class="rounded-circle"
+                                    src="assets/img/user/u2.jpg"
+                                    alt="Image"
+                                  />
+                                  <span class="status away"></span>
+                                </div>
+                                <div
+                                  class="media-body d-flex justify-content-between"
+                                >
+                                  <div class="message-contents">
+                                    <h4 class="title">Aarn</h4>
+                                    <p class="last-msg">
+                                      Lorem ipsum dolor sit, amet consectetur
+                                      adipisicing elit. Nam itaque doloremque
+                                      odio, eligendi delectus vitae.
+                                    </p>
+
+                                    <span
+                                      class="font-size-12 font-weight-medium text-secondary"
+                                    >
+                                      <i class="mdi mdi-clock-outline"></i> 30
+                                      min ago...
+                                    </span>
+                                  </div>
+                                </div>
+                               </a>
+                              </a>
+                           
+                            </li>
+
+                          </ul>
+                        </div>
+
+                        <div
+                          class="tab-pane fade"
+                          id="profile2"
+                          role="tabpanel"
+                          aria-labelledby="profile2-tab"
+                        >
+                          <ul
+                            class="list-unstyled"
+                            data-simplebar
+                            style="height: 360px"
+                          >
+                          <li>
+                            
+                            <a
+                            href="javscript:void(0)"                              
+                          >
+                           <a href="/message-preview.html" class="media media-message media-notification media-active">
+                            <div class="position-relative mr-3">
+                              <img
+                                class="rounded-circle"
+                                src="assets/img/user/u2.jpg"
+                                alt="Image"
+                              />
+                              <span class="status away"></span>
+                            </div>
+                            <div
+                              class="media-body d-flex justify-content-between"
+                            >
+                              <div class="message-contents">
+                                <h4 class="title">Aarn</h4>
+                                <p class="last-msg">
+                                  Lorem ipsum dolor sit, amet consectetur
+                                  adipisicing elit. Nam itaque doloremque
+                                  odio, eligendi delectus vitae.
+                                </p>
+
+                                <span
+                                  class="font-size-12 font-weight-medium text-secondary"
+                                >
+                                  <i class="mdi mdi-clock-outline"></i> 30
+                                  min ago...
+                                </span>
+                              </div>
+                            </div>
+                           </a>
+                          </a>
+                       
+                        </li>
+                          <li>
+                            
+                            <a
+                            href="javscript:void(0)"                              
+                          >
+                           <a href="/message-preview.html" class="media media-message media-notification media-active">
+                            <div class="position-relative mr-3">
+                              <img
+                                class="rounded-circle"
+                                src="assets/img/user/u2.jpg"
+                                alt="Image"
+                              />
+                              <span class="status away"></span>
+                            </div>
+                            <div
+                              class="media-body d-flex justify-content-between"
+                            >
+                              <div class="message-contents">
+                                <h4 class="title">Aarn</h4>
+                                <p class="last-msg">
+                                  Lorem ipsum dolor sit, amet consectetur
+                                  adipisicing elit. Nam itaque doloremque
+                                  odio, eligendi delectus vitae.
+                                </p>
+
+                                <span
+                                  class="font-size-12 font-weight-medium text-secondary"
+                                >
+                                  <i class="mdi mdi-clock-outline"></i> 30
+                                  min ago...
+                                </span>
+                              </div>
+                            </div>
+                           </a>
+                          </a>
+                       
+                        </li>
+                          <li>
+                            
+                            <a
+                            href="javscript:void(0)"                              
+                          >
+                           <a href="/message-preview.html" class="media media-message media-notification media-active">
+                            <div class="position-relative mr-3">
+                              <img
+                                class="rounded-circle"
+                                src="assets/img/user/u2.jpg"
+                                alt="Image"
+                              />
+                              <span class="status away"></span>
+                            </div>
+                            <div
+                              class="media-body d-flex justify-content-between"
+                            >
+                              <div class="message-contents">
+                                <h4 class="title">Aarn</h4>
+                                <p class="last-msg">
+                                  Lorem ipsum dolor sit, amet consectetur
+                                  adipisicing elit. Nam itaque doloremque
+                                  odio, eligendi delectus vitae.
+                                </p>
+
+                                <span
+                                  class="font-size-12 font-weight-medium text-secondary"
+                                >
+                                  <i class="mdi mdi-clock-outline"></i> 30
+                                  min ago...
+                                </span>
+                              </div>
+                            </div>
+                           </a>
+                          </a>
+                       
+                        </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="tab-pane fade"
+                          id="contact2"
+                          role="tabpanel"
+                          aria-labelledby="contact2-tab"
+                        >
+                          <ul
+                            class="list-unstyled"
+                            data-simplebar
+                            style="height: 360px"
+                          >
+                          <li>
+                            
+                            <a
+                            href="javscript:void(0)"                              
+                          >
+                           <a href="/message-preview.html" class="media media-message media-notification media-active">
+                            <div class="position-relative mr-3">
+                              <img
+                                class="rounded-circle"
+                                src="assets/img/user/u2.jpg"
+                                alt="Image"
+                              />
+                              <span class="status away"></span>
+                            </div>
+                            <div
+                              class="media-body d-flex justify-content-between"
+                            >
+                              <div class="message-contents">
+                                <h4 class="title">Aarn</h4>
+                                <p class="last-msg">
+                                  Lorem ipsum dolor sit, amet consectetur
+                                  adipisicing elit. Nam itaque doloremque
+                                  odio, eligendi delectus vitae.
+                                </p>
+
+                                <span
+                                  class="font-size-12 font-weight-medium text-secondary"
+                                >
+                                  <i class="mdi mdi-clock-outline"></i> 30
+                                  min ago...
+                                </span>
+                              </div>
+                            </div>
+                           </a>
+                          </a>
+                       
+                        </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="dropdown-menu dropdown-menu-right d-none">
+                    <li class="dropdown-header">You have 5 notifications</li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-account-plus"></i> New user registered
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 10 AM</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-account-remove"></i> User deleted
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 07 AM</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-chart-areaspline"></i> Sales report is
+                        ready
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 12 PM</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-account-supervisor"></i> New client
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 10 AM</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-server-network-off"></i> Server
+                        overloaded
+                        <span class="font-size-12 d-inline-block float-right"
+                          ><i class="mdi mdi-clock-outline"></i> 05 AM</span
+                        >
+                      </a>
+                    </li>
+                    <li class="dropdown-footer">
+                      <a class="text-center" href="#"> View All </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- User Account -->
+                <li class="dropdown user-menu">
+                  <button
+                    href="#"
+                    class="dropdown-toggle nav-link"
+                    data-toggle="dropdown"
+                  >
+                    <img
+                      src="assets/img/user/user.png"
+                      class="user-image"
+                      alt="User Image"
+                    />
+                    <span class="d-none d-lg-inline-block">Abdus Salam</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <!-- User image -->
+                    <li class="dropdown-header">
+                      <img
+                        src="assets/img/user/user.png"
+                        class="img-circle"
+                        alt="User Image"
+                      />
+                      <div class="d-inline-block">
+                        Abdus Salam
+                        <small class="pt-1">iamabdus@gmail.com</small>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a href="user-profile.html">
+                        <i class="mdi mdi-account"></i> My Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="mdi mdi-email"></i> Message </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-diamond-stone"></i> Projects
+                      </a>
+                    </li>
+                    <li class="right-sidebar-in">
+                      <a href="javascript:0">
+                        <i class="mdi mdi-settings"></i> Setting
+                      </a>
+                    </li>
+
+                    <li class="dropdown-footer">
+                      <a href="index.html">
+                        <i class="mdi mdi-logout"></i> Log Out
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <!-- ====================================
+          ——— CONTENT WRAPPER
+          ===================================== -->
+        <div class="content-wrapper">
+          <div class="content">
+          <!-- Ticket message box -->
+          <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="ticketsdetails-left">
+                    <div class="orders-msg">
+                      <div class="ticket-details">
+                        <div class="ticket-details-conents">
+                          <h1><span><svg width="20" height="20" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.66602 0.166504H7.33268C7.79681 0.166504 8.24193 0.350878 8.57012 0.679067C8.89831 1.00726 9.08268 1.45238 9.08268 1.9165V10.6665C9.08263 10.8927 9.01684 11.114 8.89331 11.3034C8.76978 11.4929 8.59385 11.6424 8.38691 11.7336C8.17998 11.8249 7.95098 11.8541 7.72777 11.8176C7.50455 11.7811 7.29676 11.6805 7.12968 11.5281L5.39252 9.94317C5.28505 9.84512 5.14482 9.79076 4.99935 9.79076C4.85387 9.79076 4.71365 9.84512 4.60618 9.94317L2.86902 11.5281C2.70193 11.6805 2.49414 11.7811 2.27093 11.8176C2.04772 11.8541 1.81872 11.8249 1.61178 11.7336C1.40485 11.6424 1.22892 11.4929 1.10539 11.3034C0.981861 11.114 0.916068 10.8927 0.916016 10.6665V1.9165C0.916016 1.45238 1.10039 1.00726 1.42858 0.679067C1.75677 0.350878 2.20189 0.166504 2.66602 0.166504Z" fill="#38C173"/>
+                            </svg></span> Ticket details for: #SP_C5AE4</h1>
+                          <p>Created: 20 Nov, 2021 09:11 AM</p>
+                        </div>
+                      </div>
+                      <div class="ticket-chatbox-con">
+                        <div class="msg-user-option">
+                            <div class="msg-user">
+                            <img src="./assets/img/user/u-xl-1.jpg" alt="">
+                    <div class="msg-user-names">
+                    <h1>Jenny Wilson</h1>
+                              <p><span>Last seen 14 hours ago</span> | Local Time : Apr 08, 2023   11:17 AM </p>
+                    </div>
+                            </div>
+                            <div class="msg-option">
+                              <button>
+                            <img src="./assets/img/icon/ticket/ticket-icon-2.svg" alt="">
+                              </button>
+                            </div>
+                          </div>
+                          <div class="msg-box">
+                            <div class="msg-date">
+                              <p>MONDAY AUG 29, 2021</p>
+                            </div>
+                            <div class="admin-msg">
+                              <div class="admin-msg-text">
+                                <p>
+                                  Hello, so we gonna start the project tomorrow right? Because i
+                                  wanna prepare to do some sketching.
+                                </p>
+                                <span>
+                                  20:30 pm
+                                  <svg
+                                    width="10"
+                                    height="7"
+                                    viewBox="0 0 10 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                    <path
+                                      d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="user-msg">
+                              <div class="user-msg-img">
+                                <img src="./assets/img/user/u-xl-1.jpg" alt="">
+                              </div>
+                              <div class="user-msg-text">
+                                <p>
+                                  Hai Hassan, That’s gonna to great. Hope will the best for tomorrow
+                                  project.
+                                </p>
+                                <span>20:30 pm</span>
+                              </div>
+                            </div>
+                            <div class="admin-msg">
+                              <div class="admin-msg-text">
+                                <p>
+                                  Hello, so we gonna start the project tomorrow right? Because i
+                                  wanna prepare to do some sketching.
+                                </p>
+                                <span>
+                                  20:30 pm
+                                  <svg
+                                    width="10"
+                                    height="7"
+                                    viewBox="0 0 10 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                    <path
+                                      d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="user-msg">
+                              <div class="user-msg-img">
+                                <img src="./assets/img/user/u-xl-1.jpg" alt="">
+                              </div>
+                              <div class="user-msg-text">
+                                <p>
+                                  Hai Hassan, That’s gonna to great. Hope will the best for tomorrow
+                                  project.
+                                </p>
+                                <span>20:30 pm</span>
+                              </div>
+                            </div>
+                            <div class="msg-date">
+                              <p>TODAY</p>
+                            </div>
+                            <div class="admin-msg">
+                              <div class="admin-msg-text">
+                                <p>
+                                  Hello, so we gonna start the project tomorrow right? Because i
+                                  wanna prepare to do some sketching.
+                                </p>
+                                <span>
+                                  20:30 pm
+                                  <svg
+                                    width="10"
+                                    height="7"
+                                    viewBox="0 0 10 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6.92108 0.743726C6.86932 0.702747 6.80996 0.672424 6.74642 0.654507C6.68288 0.636591 6.61642 0.631435 6.55087 0.639337C6.48533 0.64724 6.422 0.668044 6.36454 0.70055C6.30707 0.733055 6.25662 0.776619 6.21608 0.828726L2.71608 5.32873L1.00108 3.23873C0.960854 3.18518 0.910278 3.14026 0.852357 3.10663C0.794435 3.073 0.730348 3.05136 0.663899 3.04297C0.597451 3.03459 0.529996 3.03964 0.465537 3.05783C0.401079 3.07602 0.340932 3.10697 0.288666 3.14885C0.2364 3.19073 0.19308 3.24269 0.161279 3.30163C0.129477 3.36057 0.109842 3.4253 0.103538 3.49198C0.0972342 3.55866 0.104391 3.62592 0.124582 3.68978C0.144774 3.75364 0.17759 3.81279 0.221081 3.86373L2.30608 6.45373C2.35314 6.51174 2.4126 6.55847 2.48009 6.59048C2.54758 6.62249 2.62138 6.63898 2.69608 6.63873C2.77537 6.64227 2.85436 6.62688 2.92653 6.59384C2.99869 6.5608 3.06195 6.51106 3.11108 6.44873L7.02608 1.44873C7.066 1.39574 7.09497 1.33534 7.11131 1.27104C7.12765 1.20675 7.13103 1.13985 7.12126 1.07423C7.11149 1.00862 7.08875 0.945603 7.05439 0.888861C7.02002 0.832118 6.97471 0.782782 6.92108 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                    <path
+                                      d="M9.42113 0.743726C9.36937 0.702747 9.31 0.672424 9.24646 0.654507C9.18292 0.636591 9.11646 0.631435 9.05092 0.639337C8.98537 0.64724 8.92204 0.668044 8.86458 0.70055C8.80712 0.733055 8.75666 0.776619 8.71613 0.828726L5.21613 5.32872L4.91113 4.95373L4.28113 5.76372L4.83113 6.44873C4.87819 6.50674 4.93765 6.55346 5.00514 6.58548C5.07263 6.61749 5.14643 6.63398 5.22113 6.63372C5.29623 6.63338 5.37029 6.61612 5.43781 6.58322C5.50532 6.55033 5.56456 6.50265 5.61113 6.44373L9.52613 1.44373C9.56526 1.39089 9.59359 1.33086 9.6095 1.26707C9.6254 1.20327 9.62857 1.13697 9.61881 1.07195C9.60906 1.00693 9.58658 0.94447 9.55266 0.88815C9.51874 0.831829 9.47404 0.782751 9.42113 0.743726V0.743726Z"
+                                      fill="#2BD67B"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="user-msg">
+                              <div class="user-msg-img">
+                                <img src="./assets/img/user/u-xl-1.jpg" alt="">
+                              </div>
+                              <div class="user-msg-text">
+                                <p>
+                                  Hai Hassan, That’s gonna to great. Hope will the best for tomorrow
+                                  project.
+                                </p>
+                                <span>20:30 pm</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text-input">
+                            <textarea
+                              name=""
+                              id=""
+                              cols="30"
+                              rows=""
+                              placeholder="Write a message here..."
+                            ></textarea>
+                            <div class="textarea-count">
+                              <span>0</span>
+                              <span>/2000</span>
+                            </div>
+                          </div>
+                          <div class="msg-sending-box">
+                            <div class="msg-sending-left">
+                              <div class="attached">
+                                <svg
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path
+                                      d="M12 22C10.4491 22.0376 8.94653 21.4587 7.82179 20.3902C6.69705 19.3217 6.0419 17.8508 6 16.3V6.12999C6.02883 5.0089 6.50064 3.94489 7.31216 3.17085C8.12368 2.39682 9.20879 1.97582 10.33 1.99999C11.4529 1.97313 12.5406 2.39294 13.3543 3.16726C14.168 3.94158 14.6412 5.00713 14.67 6.12999V16.31C14.6284 16.9886 14.3295 17.6257 13.8343 18.0915C13.3391 18.5573 12.6849 18.8167 12.005 18.8167C11.3251 18.8167 10.6709 18.5573 10.1757 18.0915C9.68047 17.6257 9.38159 16.9886 9.34 16.31V6.91999C9.34 6.65478 9.44536 6.40042 9.63289 6.21289C9.82043 6.02535 10.0748 5.91999 10.34 5.91999C10.6052 5.91999 10.8596 6.02535 11.0471 6.21289C11.2346 6.40042 11.34 6.65478 11.34 6.91999V16.31C11.3599 16.4723 11.4386 16.6217 11.5611 16.7301C11.6836 16.8385 11.8415 16.8983 12.005 16.8983C12.1685 16.8983 12.3264 16.8385 12.4489 16.7301C12.5714 16.6217 12.6501 16.4723 12.67 16.31V6.12999C12.6389 5.5384 12.3758 4.98294 11.9377 4.58417C11.4996 4.18539 10.9219 3.97548 10.33 3.99999C9.73979 3.97817 9.16467 4.1893 8.72876 4.58779C8.29285 4.98629 8.0311 5.5402 8 6.12999V16.3C8.04163 17.3204 8.48597 18.2828 9.23569 18.9763C9.98541 19.6698 10.9794 20.0379 12 20C13.0206 20.0379 14.0146 19.6698 14.7643 18.9763C15.514 18.2828 15.9584 17.3204 16 16.3V6.12999C16 5.86478 16.1054 5.61042 16.2929 5.42289C16.4804 5.23535 16.7348 5.12999 17 5.12999C17.2652 5.12999 17.5196 5.23535 17.7071 5.42289C17.8946 5.61042 18 5.86478 18 6.12999V16.3C17.9581 17.8508 17.303 19.3217 16.1782 20.3902C15.0535 21.4587 13.5509 22.0376 12 22V22Z"
+                                      fill="#AAAAAC"
+                                    />
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="attached">
+                                <svg
+                                  width="13"
+                                  height="21"
+                                  viewBox="0 0 13 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M9.28216 7.51756H6.99316V3.54956C6.99316 3.28434 6.8878 3.02999 6.70026 2.84245C6.51273 2.65492 6.25837 2.54956 5.99316 2.54956H3.28516C3.01994 2.54956 2.76559 2.65492 2.57805 2.84245C2.39051 3.02999 2.28516 3.28434 2.28516 3.54956V9.47256C2.28501 9.73199 2.38568 9.98132 2.56593 10.1679C2.74617 10.3545 2.99188 10.4637 3.25116 10.4726L5.18816 10.5336V17.9376C5.18854 18.0637 5.23237 18.1859 5.31226 18.2835C5.39216 18.3812 5.50324 18.4483 5.62684 18.4737C5.75043 18.499 5.87898 18.4811 5.99086 18.4227C6.10274 18.3644 6.19113 18.2694 6.24116 18.1536L10.2012 8.91156C10.2664 8.75939 10.2928 8.5934 10.2781 8.42849C10.2633 8.26358 10.2079 8.10492 10.1167 7.96673C10.0255 7.82855 9.90139 7.71517 9.75556 7.63677C9.60973 7.55838 9.44772 7.51741 9.28216 7.51756ZM8.99316 3.54956V5.51756H9.28216C9.77847 5.51769 10.267 5.64095 10.704 5.87629C11.1409 6.11164 11.5127 6.45172 11.7859 6.86606C12.0591 7.2804 12.2253 7.75605 12.2695 8.2504C12.3137 8.74474 12.2345 9.24232 12.0392 9.69856L8.07916 18.9416C7.84757 19.4806 7.43714 19.9232 6.91711 20.1948C6.39708 20.4664 5.79929 20.5503 5.2246 20.4323C4.64991 20.3143 4.1335 20.0017 3.76251 19.5473C3.39152 19.0928 3.18866 18.5242 3.18816 17.9376V12.4716C2.40961 12.4464 1.67139 12.1194 1.12962 11.5597C0.587845 11 0.285009 10.2515 0.285156 9.47256V3.54956C0.285156 2.75391 0.601227 1.99085 1.16384 1.42824C1.72645 0.865631 2.48951 0.549561 3.28516 0.549561L5.99316 0.549561C6.78881 0.549561 7.55187 0.865631 8.11448 1.42824C8.67709 1.99085 8.99316 2.75391 8.99316 3.54956Z"
+                                    fill="#AAAAAC"
+                                  />
+                                </svg>
+                              </div>
+                              <div class="attached request-call-msg">
+                                <svg
+                                  width="21"
+                                  height="13"
+                                  viewBox="0 0 21 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M4.31738 2.61499C3.78695 2.61499 3.27824 2.8257 2.90317 3.20078C2.5281 3.57585 2.31738 4.08456 2.31738 4.61499V8.61499C2.31738 9.14542 2.5281 9.65413 2.90317 10.0292C3.27824 10.4043 3.78695 10.615 4.31738 10.615H10.3174C10.8478 10.615 11.3565 10.4043 11.7316 10.0292C12.1067 9.65413 12.3174 9.14542 12.3174 8.61499V4.61499C12.3174 4.08456 12.1067 3.57585 11.7316 3.20078C11.3565 2.8257 10.8478 2.61499 10.3174 2.61499H4.31738ZM14.2974 4.21999L16.3174 2.19999C16.6925 1.82526 17.2011 1.61484 17.7314 1.61499H18.3174C18.8478 1.61499 19.3565 1.8257 19.7316 2.20078C20.1067 2.57585 20.3174 3.08456 20.3174 3.61499V9.61499C20.3174 10.1454 20.1067 10.6541 19.7316 11.0292C19.3565 11.4043 18.8478 11.615 18.3174 11.615H17.7314C17.201 11.6149 16.6924 11.4041 16.3174 11.029L14.2974 9.00999C14.1994 9.99754 13.7378 10.9134 13.0022 11.5796C12.2667 12.2459 11.3098 12.6149 10.3174 12.615H4.31738C3.25652 12.615 2.2391 12.1936 1.48896 11.4434C0.73881 10.6933 0.317383 9.67586 0.317383 8.61499V4.61499C0.317383 3.55412 0.73881 2.53671 1.48896 1.78656C2.2391 1.03642 3.25652 0.61499 4.31738 0.61499L10.3174 0.61499C11.3098 0.615102 12.2667 0.98412 13.0022 1.65035C13.7378 2.31658 14.1994 3.23244 14.2974 4.21999ZM17.7324 9.61499H18.3174V3.61499H17.7314L14.7314 6.61499L17.7314 9.61499H17.7324ZM5.31738 8.61499C5.05217 8.61499 4.79781 8.50963 4.61028 8.3221C4.42274 8.13456 4.31738 7.88021 4.31738 7.61499C4.31738 7.34977 4.42274 7.09542 4.61028 6.90788C4.79781 6.72035 5.05217 6.61499 5.31738 6.61499C5.5826 6.61499 5.83695 6.72035 6.02449 6.90788C6.21203 7.09542 6.31738 7.34977 6.31738 7.61499C6.31738 7.88021 6.21203 8.13456 6.02449 8.3221C5.83695 8.50963 5.5826 8.61499 5.31738 8.61499Z"
+                                    fill="#AAAAAC"
+                                  />
+                                </svg>
+                                <span>Request a call</span>
+                              </div>
+                            </div>
+                    
+                            <div class="msg-sending-right">
+                              <div class="attached">
+                                <svg
+                                  width="25"
+                                  height="25"
+                                  viewBox="0 0 25 25"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M12.7892 22.781C7.26618 22.781 2.78918 18.304 2.78918 12.781C2.78918 7.25801 7.26618 2.78101 12.7892 2.78101C18.3122 2.78101 22.7892 7.25801 22.7892 12.781C22.7892 18.304 18.3122 22.781 12.7892 22.781ZM12.7892 20.781C14.9109 20.781 16.9457 19.9382 18.446 18.4379C19.9463 16.9376 20.7892 14.9027 20.7892 12.781C20.7892 10.6593 19.9463 8.62444 18.446 7.12415C16.9457 5.62386 14.9109 4.78101 12.7892 4.78101C10.6675 4.78101 8.63262 5.62386 7.13233 7.12415C5.63204 8.62444 4.78918 10.6593 4.78918 12.781C4.78918 14.9027 5.63204 16.9376 7.13233 18.4379C8.63262 19.9382 10.6675 20.781 12.7892 20.781ZM8.86918 16.175C8.81744 16.0542 8.79001 15.9244 8.78844 15.7929C8.78687 15.6615 8.8112 15.5311 8.86005 15.4091C8.90889 15.2871 8.98129 15.1759 9.07311 15.0818C9.16493 14.9878 9.27437 14.9127 9.39518 14.861C9.516 14.8093 9.64582 14.7818 9.77724 14.7803C9.90866 14.7787 10.0391 14.803 10.1611 14.8519C10.2831 14.9007 10.3943 14.9731 10.4884 15.0649C10.5824 15.1567 10.6574 15.2662 10.7092 15.387C10.884 15.7937 11.1742 16.1402 11.5439 16.3837C11.9136 16.6272 12.3465 16.757 12.7892 16.757C13.2319 16.757 13.6648 16.6272 14.0345 16.3837C14.4042 16.1402 14.6944 15.7937 14.8692 15.387C14.9209 15.2662 14.996 15.1567 15.09 15.0649C15.184 14.9731 15.2952 14.9007 15.4172 14.8519C15.5393 14.803 15.6697 14.7787 15.8011 14.7803C15.9325 14.7818 16.0624 14.8093 16.1832 14.861C16.304 14.9127 16.4134 14.9878 16.5053 15.0818C16.5971 15.1759 16.6695 15.2871 16.7183 15.4091C16.7672 15.5311 16.7915 15.6615 16.7899 15.7929C16.7884 15.9244 16.7609 16.0542 16.7092 16.175C16.3807 16.9425 15.8341 17.5966 15.1373 18.0563C14.4405 18.5161 13.624 18.7611 12.7892 18.7611C11.9544 18.7611 11.1379 18.5161 10.4411 18.0563C9.74424 17.5966 9.19769 16.9425 8.86918 16.175ZM9.78918 8.78101C10.0544 8.78101 10.3088 8.88636 10.4963 9.0739C10.6838 9.26144 10.7892 9.51579 10.7892 9.78101V11.781C10.7892 12.0462 10.6838 12.3006 10.4963 12.4881C10.3088 12.6756 10.0544 12.781 9.78918 12.781C9.52397 12.781 9.26961 12.6756 9.08208 12.4881C8.89454 12.3006 8.78918 12.0462 8.78918 11.781V9.78101C8.78918 9.51579 8.89454 9.26144 9.08208 9.0739C9.26961 8.88636 9.52397 8.78101 9.78918 8.78101ZM15.7892 8.78101C16.0544 8.78101 16.3088 8.88636 16.4963 9.0739C16.6838 9.26144 16.7892 9.51579 16.7892 9.78101V11.781C16.7892 12.0462 16.6838 12.3006 16.4963 12.4881C16.3088 12.6756 16.0544 12.781 15.7892 12.781C15.524 12.781 15.2696 12.6756 15.0821 12.4881C14.8945 12.3006 14.7892 12.0462 14.7892 11.781V9.78101C14.7892 9.51579 14.8945 9.26144 15.0821 9.0739C15.2696 8.88636 15.524 8.78101 15.7892 8.78101Z"
+                                    fill="#AAAAAC"
+                                  />
+                                </svg>
+                              </div>
+                              <div class="sending-btn">
+                                <button>
+                                  <img src="./assets/img/icon/ticket/send-icon.svg" alt="">
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="orders-right">
+                    <div class="order-details-o">
+                        <div class="orders-details-title">
+                          <h1>Ticket Details</h1>
+                        </div>
+          
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                      <div class="order-info-box-icon">
+                        <img src="./assets/img/icon/ticket/sf-1.svg" alt="">
+                      </div>
+                            <p>Ticket Id</p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>Mh Jibon</p>
+                          </div>
+                        </div>
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                            <div class="order-info-box-icon">
+                                <img src="./assets/img/icon/ticket/sf-2.svg" alt="">
+                              </div>
+          
+                            <p>SUBJECT</p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>24 Oct, 2021</p>
+                          </div>
+                        </div>
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                            <div class="order-info-box-icon">
+                                <img src="./assets/img/icon/ticket/sf-3.svg" alt="">
+                              </div>
+                            <p>Category </p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>$277</p>
+                          </div>
+                        </div>
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                            <div class="order-info-box-icon">
+                                <img src="./assets/img/icon/ticket/sf-4.svg" alt="">
+                              </div>
+                            <p>Open Date</p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>#MP_2B1C1</p>
+                          </div>
+                        </div>
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                            <div class="order-info-box-icon">
+                                <img src="./assets/img/icon/ticket/sf-5.svg" alt="">
+                              </div>
+                            <p>Status</p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>#MP_2B1C1</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="orders-right mt-3">
+                    <div class="order-details-o">
+                        <div class="orders-details-title">
+                          <h1>Ticket Details</h1>
+                        </div>
+                        <div class="ticket-profile">
+                            <div class="ticket-profile-img">
+                                <img src="./assets/img/user/u-xl-1.jpg" alt="">
+                            </div>
+                            <h3>Digital Square</h3>
+                            <p>Yongihd@gmail.com</p>
+                        </div>
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                      <div class="order-info-box-icon">
+                        <img src="./assets/img/icon/ticket/sf-1.svg" alt="">
+                      </div>
+                            <p>IP</p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>192.168.1215</p>
+                          </div>
+                        </div>
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                            <div class="order-info-box-icon">
+                                <img src="./assets/img/icon/ticket/sf-2.svg" alt="">
+                              </div>
+          
+                            <p>MOBILE NUMBER</p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>+1234567789</p>
+                          </div>
+                        </div>
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                            <div class="order-info-box-icon">
+                                <img src="./assets/img/icon/ticket/sf-3.svg" alt="">
+                              </div>
+                            <p>COUNTRY</p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>Manogalia</p>
+                          </div>
+                        </div>
+                        <div class="order-info-box">
+                          <div class="order-info-box-left">
+                            <div class="order-info-box-icon">
+                                <img src="./assets/img/icon/ticket/sf-4.svg" alt="">
+                              </div>
+                            <p>Time Zone</p>
+                          </div>
+                          <div class="order-info-box-right">
+                            <p>America Mantique</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="orders-right mt-3">
+                    <div class="order-details-o">
+                        <div class="orders-details-title orders-details-titles">
+                          <h1>Ticket Notes</h1>
+                          <button class="btn-plus" type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"><img src="./assets/img/icon/ticket/plus.svg" alt="" ></button>
+                           <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class ="modal-title" id="exampleModalLabel">
+                            Add Note
+                          </h5>
+                        </div>
+                        <div class="modal-body">
+                          <form action="">
+                            <div class="input-filed-item">
+                              <label for="">Note :</label>
+                              <input type="text" name="" id="" required/>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="close-btn"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class=" add-btn">
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                        </div>
+                        <div class="ticket-profile">
+                            <div class="ticket-notes-img">
+                                <img src="./assets/img/icon/ticket/edit-img.svg" alt="">
+                            </div>
+                            <h3>Don’t Have any notes yet</h3>
+                            <p>Aad your notes have</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="orders-right mt-3">
+                    <div class="order-details-o">
+                        <div class="orders-details-title">
+                          <h1>Ticket Notes</h1>
+                        </div>
+                       <div class="ticket-note-lists">
+                        <div class="ticket-note-list">
+                          <div class="ticket-note-close">
+                          <img src="./assets/img/icon/ticket/close.svg" alt="">
+                          </div>
+                          <p>adsabdad</p>
+                        </div>
+                        <div class="ticket-note-list">
+                          <div class="ticket-note-close">
+                          <img src="./assets/img/icon/ticket/close.svg" alt="">
+                          </div>
+                          <p>adsabdad</p>
+                        </div>
+                       </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Content Wrapper -->
+
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+          <div class="copyright bg-white">
+            <p>
+              Copyright &copy; <span id="copy-year"></span> a by
+              <a
+                class="text-success"
+                href="https://musicpromotiontoday.com/"
+                target="_blank"
+              >
+                Musicpromotiontoday
+              </a>
+            </p>
+          </div>
+          <script>
+            var d = new Date();
+            var year = d.getFullYear();
+            document.getElementById("copy-year").innerHTML = year;
+          </script>
+        </footer>
+      </div>
+      <!-- End Page Wrapper -->
+    </div>
+    <!-- End Wrapper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/simplebar/simplebar.min.js"></script>
+
+    <script src="assets/plugins/charts/Chart.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+
+    <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
+    <script src="assets/js/vector-map.js"></script>
+
+    <script src="assets/plugins/daterangepicker/moment.min.js"></script>
+    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="assets/js/date-range.js"></script>
+
+    <script src="assets/plugins/toastr/toastr.min.js"></script>
+
+    <script src="assets/js/sleek.js"></script>
+    <link href="assets/options/optionswitch.css" rel="stylesheet" />
+    <script src="assets/options/optionswitcher.js"></script>
+  </body>
+</html>

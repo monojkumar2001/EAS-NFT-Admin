@@ -1,0 +1,236 @@
+.order-deliver-again-wrapper {
+  background: #f2f2fd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.order-deliver-again-wrapper h3 {
+  color: #444444;
+  font-weight: 500;
+  font-size: 20px;
+}
+.order-deliver-again-wrapper .order-deliver-again {
+  background: #38c173;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
+}
+.order-delivery-btn .extend-delivery-btn {
+  width: 100%;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444444;
+}
+.deliver-input-field-item textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  color: #666;
+  box-shadow: inset 0 0 0.25rem #ddd;
+  &:focus {
+    outline: none;
+    border: 1px solid darken(#ddd, 5%);
+    box-shadow: inset 0 0 0.5rem darken(#ddd, 5%);
+  }
+  &[placeholder] {
+    font-size: 16px;
+  }
+}
+.text-area-count {
+  float: right;
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
+}
+.modal-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #444443;
+}
+.quick-response-btn {
+  font-size: 18px;
+}
+.deliver-input-field-items {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+}
+.deliver-btn {
+  background: #38c173;
+  padding: 10px 35px;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.modal-header .close span {
+  font-size: 35px;
+  color: #000;
+}
+.deliver-content-text {
+  background: #f2f2fd;
+  border-radius: 4px;
+}
+.deliver-content-text p {
+  font-size: 16px;
+}
+.delivery-input-field-item label {
+  font-size: 17px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 10px;
+}
+.delivery-input-field-item .number-input {
+  width: 200px;
+  padding: 7px 15px;
+}
+.delivery-date-item h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.private-note h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 10px;
+}
+.private-add-note-btn {
+  color: #38c173;
+  font-size: 18px;
+  font-weight: 600;
+}
+.modal-body .private-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #a8a8a8;
+  border-radius: 6px;
+}
+.private-con-list li {
+  color: #444444;
+  font-size: 16px;
+  user-select: none;
+  padding: 10px 30px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.private-con-list li span {
+  position: absolute;
+  right: 2%;
+  top: 10px;
+  font-size: 28px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+#see-more {
+  display: none;
+}
+
+.add-new-question {
+  padding: 10px;
+  border: 1px solid #38c173;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #38c173;
+}
+.add-question-header {
+  font-size: 16px;
+  color: #444444;
+  font-weight: 500;
+}
+.input-groups textarea {
+  border: 1px solid #b1b1b1;
+  outline: none;
+  border-radius: 4px;
+}
+.input-groups label {
+  font-size: 16px;
+  color: #444444;
+  font-weight: 500;
+}
+.input-groups-select select {
+  width: 30%;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #b1b1b1;
+  margin-bottom: 30px;
+}
+.add-question-wrappers {
+  background: #f2f2fd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.input-fuild-item {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #b1b1b1;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.delete {
+  text-decoration: none;
+  display: inline-block;
+  background: #f44336;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.new-question-item-con li {
+  color: #444444;
+  font-size: 16px;
+  user-select: none;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  position: relative;
+  background: #f2f2fd;
+  margin-top: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.new-question-item-con li span {
+  position: absolute;
+  right: 2%;
+  top: 10px;
+  font-size: 28px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.file-input-box{
+  display: none;
+}
+.deliver-input-field-item .save-draft{
+color: #38c173;
+background: none;
+}
