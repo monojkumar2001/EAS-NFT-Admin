@@ -127,7 +127,7 @@ background:#00C2D2;
 color: #fff;
 }
 
-.sidebar .sidenav-item-link .nav-text {margin-right: auto;overflow: hidden;max-width: 150px;text-overflow: ellipsis;white-space: nowrap;color: #fff;}
+.sidebar .sidenav-item-link .nav-text {margin-right: auto;overflow: hidden;max-width: 200px;text-overflow: ellipsis;white-space: nowrap;color: #fff;}
 
 .sidebar .sidenav-item-link .badge {
 padding: .4em .6em;

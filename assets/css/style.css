@@ -200,10 +200,27 @@ border-style: none;
 .table-bordered thead tr th{
 padding: 20px 30px;
 }
+.ticket-list-2-table thead tr th{
+padding: 15px 10px;
+}
+
+.ticket-catagory-table thead tr th{
+  padding: 20px 50px;
+  text-align: center;
+  }
 .table-bordered tbody tr td{
 padding: 15px 30px;
 color: #444444;
 }
+.ticket-list-2-table tbody tr td{
+padding: 15px 10px;
+color: #444444;
+}
+.ticket-catagory-table tbody tr td{
+  padding: 15px 50px;
+  text-align: center;
+  color: #444444;
+  }
 .table-bordered thead th {
 border-bottom-width: 0px;
 }
@@ -241,7 +258,8 @@ margin-right: 30px;
 
 .table-wrapper{
 background-color: #ffffff;
-padding-bottom: 40px;
+padding: 40px;
+border-radius: 30px;
 }
 .verified-btn{background: rgba(115, 112, 231, 0.2);padding: 10px 20px;font-size: 16px;border-radius: 5px;cursor: pointer;width: 150px;}
 .spending-con{
@@ -250,15 +268,15 @@ align-items: center;
 justify-content: space-between;
 gap: 40px;
 }
-.modal-content{padding: 20px;background: #FFFFFF;border: 1px solid rgba(0, 0, 0, 0.2);box-shadow: 10px 14px 24px rgba(175, 175, 175, 0.12);border-radius: 10px;}
+.modal-content{background: #FFFFFF;border: 1px solid rgba(0, 0, 0, 0.2);box-shadow: 10px 14px 24px rgba(175, 175, 175, 0.12);border-radius: 30px;}
 .modal-header-item{
 display: flex;
 flex-direction: column;
 gap: 15px;
 align-items: center;
 justify-content: center;
-background: rgba(56, 193, 115, 0.18);
-border: 1px solid #38C173;
+background: rgba(0, 194, 210, 0.1);
+border: 1px solid #00C2D2;
 border-radius: 30px;
 padding: 20px 30px;
 }
@@ -300,6 +318,7 @@ width: 100%;
 text-align: center;
 background: #F6F7FB;
 padding: 10px 10px;
+border-radius: 30px;
 }
 .model-item h2{
 font-size: 17px;
@@ -843,6 +862,9 @@ height: 20px;
 .action-categroy-btn-wrapper{
 justify-content: start;
 }
+.ticket-catagory-list-btn-wraper{
+justify-content: space-evenly;
+}
 .modal-footer{
 border-top: none;
 }
@@ -891,8 +913,15 @@ font-weight: 600;
 .invoice-completed-btn{
 background: rgba(56, 193, 115, 0.21);
 }
+.invoice-on-sale-btn{
+background: rgba(231, 112, 112, 0.21);
+}
 .invoice-completed-btn a{
 color: #38C173;
+font-weight: 600;
+}
+.invoice-on-sale-btn a{
+color: #E77070;
 font-weight: 600;
 }
 .invoice-revision-btn{
@@ -1632,4 +1661,11 @@ background: #ffffff;
 }
 .date-creates{
   width: 250px;
+}
+
+.sidebar .sub-menu {
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+  position: relative;
 }
